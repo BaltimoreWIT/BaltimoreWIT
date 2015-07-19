@@ -1,0 +1,25 @@
+﻿@import '../bourbon/bourbon';
+
+@mixin vcenter-parent {
+	position: relative;
+
+	&:before {
+		content: '';
+		display: block;
+		padding-top: 100%;
+	}
+}
+
+@mixin vcenter-this {
+	height: auto;
+	margin: auto 0;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+}
+
+@mixin vcenter {
+	position: relative;
+	@include transform(translateY(-50%));
+	top: 50%;
+}

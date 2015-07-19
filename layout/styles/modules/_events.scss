@@ -1,0 +1,28 @@
+.eventList {
+	list-style:none;
+	margin:0;
+}
+
+.eventItem {
+	@include display(flex);
+	margin:0;
+	text-decoration:none;
+	.dateWrapper, .eventWrapper {
+		@include flex(0 1 auto);
+	}
+	.dateWrapper {
+		font-weight:bold;
+		text-align:center;
+		width:30%;
+		.month, .date {
+			display:block;
+		}
+	}
+	.eventWrapper {
+		padding-left:12px;
+		width:70%;
+		h4 {
+			margin-bottom:0;
+		}
+	}
+}

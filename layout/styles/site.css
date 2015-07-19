@@ -1,0 +1,744 @@
+/*! sanitize.css | CC0 Public Domain | github.com/jonathantneal/sanitize.css */
+/*
+ * Normalization
+ */
+:root {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  overflow-y: scroll;
+  text-size-adjust: 100%;
+}
+
+audio:not([controls]) {
+  display: none;
+}
+
+details {
+  display: block;
+}
+
+input[type="number"] {
+  width: auto;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+}
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+main {
+  display: block;
+}
+
+summary {
+  display: block;
+}
+
+pre {
+  overflow: auto;
+}
+
+progress {
+  display: inline-block;
+}
+
+small {
+  font-size: 75%;
+}
+
+template {
+  display: none;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[hidden] {
+  display: none;
+}
+
+[unselectable] {
+  user-select: none;
+}
+
+/*
+ * Universal inheritance
+ */
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+* {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+::before,
+::after {
+  text-decoration: inherit;
+  vertical-align: inherit;
+}
+
+/*
+ * Opinionated defaults
+ */
+*,
+::before,
+::after {
+  border-style: solid;
+  border-width: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  box-sizing: border-box;
+  cursor: default;
+  font: 16px/1.5 sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  text-decoration: none;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+button,
+input,
+select,
+textarea {
+  background-color: transparent;
+}
+
+button,
+input,
+select,
+textarea {
+  color: inherit;
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+}
+
+button,
+input,
+select,
+textarea {
+  min-height: 1.5em;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+}
+
+nav ol,
+nav ul {
+  list-style: none;
+}
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+select::-ms-expand {
+  display: none;
+}
+select::-ms-value {
+  color: currentColor;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+::selection {
+  background-color: #b3d4fc;
+  text-shadow: none;
+}
+
+@media screen {
+  [hidden~="screen"] {
+    display: inherit;
+  }
+
+  [hidden~="screen"]:not(:active):not(:focus):not(:target) {
+    clip: rect(0 0 0 0) !important;
+    position: absolute !important;
+  }
+}
+/*
+* Scut, a collection of Sass utilities
+* to ease and improve our implementations of common style-code patterns.
+* v1.1.2
+* Docs at http://davidtheclark.github.io/scut
+*/
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.fullWidth {
+  width: 100% !important;
+}
+
+.halfWidth {
+  display: inline-block;
+  vertical-align: top;
+  width: 49.5%;
+}
+
+.alignLeft {
+  text-align: left;
+}
+
+.alignRight {
+  text-align: right;
+}
+
+.alignCenter {
+  margin-right: auto !important;
+  margin-left: auto !important;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+  visibility: none;
+}
+
+.show {
+  display: block;
+}
+
+.inlineElement {
+  display: inline !important;
+}
+
+.wrapperInline {
+  width: 100%;
+}
+.wrapperInline .elementWrapper, .wrapperInline .element {
+  display: inline-block;
+  margin-right: 10px;
+}
+.wrapperInline .elementWrapper:last-of-type, .wrapperInline .element:last-of-type {
+  margin-right: 0;
+}
+
+.wrapperFlex {
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: inline-box;
+  display: -webkit-inline-flex;
+  display: -moz-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+.wrapperFlex .elementWrapper, .wrapperFlex .element {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-basis: auto;
+  -moz-flex-basis: auto;
+  flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  margin-right: 10px;
+}
+.no-flexbox .wrapperFlex {
+  display: block;
+}
+.no-flexbox .wrapperFlex .elementWrapper, .no-flexbox .wrapperFlex .element {
+  display: inline-block;
+  width: auto;
+}
+
+.siteWrapper {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 16px;
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.siteFooter .donateCTA {
+  display: block;
+  margin: 18px auto 36px;
+  max-width: 400px;
+  width: 100%;
+}
+.siteFooter .socialWrapper {
+  margin-bottom: 24px;
+}
+@media only screen and (min-width: 330px) {
+  .siteFooter .socialWrapper li {
+    display: inline-block;
+    min-width: 100px;
+    text-align: center;
+  }
+}
+.siteFooter .socialWrapper a {
+  text-decoration: none;
+}
+.siteFooter .legal {
+  margin-bottom: 0;
+}
+@media only screen and (min-width: 600px) {
+  .siteFooter {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .siteFooter .donateCTA, .siteFooter .socialWrapper {
+    -webkit-box-flex: 0;
+    -moz-box-flex: 0;
+    box-flex: 0;
+    -webkit-flex: 0 1 auto;
+    -moz-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    margin-top: 28px;
+    width: 45%;
+  }
+  .siteFooter .socialWrapper {
+    margin-left: 18px;
+  }
+  .siteFooter p {
+    width: 100%;
+  }
+}
+
+.socialWrapper {
+  list-style: none;
+  margin: 0;
+}
+
+@media only screen and (max-width: 799px) {
+  .homepage .news, .homepage .blog {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+  }
+  .homepage .news .sectionHeading, .homepage .news .sectionContent, .homepage .blog .sectionHeading, .homepage .blog .sectionContent {
+    -webkit-box-flex: 0;
+    -moz-box-flex: 0;
+    box-flex: 0;
+    -webkit-flex: 0 1 auto;
+    -moz-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    padding: 12px;
+  }
+  .homepage .news .sectionHeading, .homepage .blog .sectionHeading {
+    width: 30%;
+  }
+  .homepage .news .sectionHeading a, .homepage .blog .sectionHeading a {
+    text-decoration: none;
+  }
+  .homepage .news .sectionContent, .homepage .blog .sectionContent {
+    padding-left: 12px;
+    width: 70%;
+  }
+  .homepage .careers .sectionContent, .homepage .community .sectionContent {
+    display: none;
+  }
+  .homepage .careers + .careers {
+    display: none;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .homepage .siteHeader {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 48px;
+  }
+  .homepage .siteHeader .siteLogo, .homepage .siteHeader .siteDesc {
+    display: inline-block;
+    -webkit-box-flex: 0;
+    -moz-box-flex: 0;
+    box-flex: 0;
+    -webkit-flex: 0 1 auto;
+    -moz-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+  }
+  .homepage .siteHeader .siteLogo {
+    width: 25%;
+  }
+  .homepage .siteHeader .siteLogo h1 {
+    font-size: 150%;
+  }
+  .homepage .siteHeader .siteDesc {
+    width: 75%;
+  }
+  .homepage .siteHeader .siteLogoSecondary {
+    display: none;
+  }
+  .homepage main {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    position: relative;
+    padding-right: 275px;
+  }
+  .homepage main .news, .homepage main .blog, .homepage main .careers, .homepage main .community {
+    -webkit-box-flex: 0;
+    -moz-box-flex: 0;
+    box-flex: 0;
+    -webkit-flex: 0 1 auto;
+    -moz-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    padding: 0;
+    width: 100%;
+  }
+  .homepage main .news .sectionHeading, .homepage main .blog .sectionHeading, .homepage main .careers .sectionHeading, .homepage main .community .sectionHeading {
+    font-size: 85%;
+    padding: 3px 6px;
+    text-transform: uppercase;
+  }
+  .homepage main .news .sectionHeading a, .homepage main .blog .sectionHeading a, .homepage main .careers .sectionHeading a, .homepage main .community .sectionHeading a {
+    text-decoration: none;
+  }
+  .homepage main .news .sectionContent, .homepage main .blog .sectionContent, .homepage main .careers .sectionContent, .homepage main .community .sectionContent {
+    padding: 0 24px 6px;
+  }
+  .homepage main .events {
+    position: absolute;
+    top: -48px;
+    right: 0;
+    width: 250px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .homepage main {
+    padding-right: 325px;
+  }
+  .homepage main .news, .homepage main .blog, .homepage main .careers, .homepage main .community {
+    width: 48%;
+  }
+  .homepage main .events {
+    width: 300px;
+  }
+}
+
+.interior article {
+  padding: 18px 36px;
+}
+.interior .articleHeader {
+  margin-bottom: 3px;
+}
+.interior .articleContent {
+  margin-top: 18px;
+}
+.interior .articleContent .imgWrapper {
+  text-align: center;
+}
+@media only screen and (min-width: 600px) {
+  .interior .articleContent .imgWrapper {
+    float: right;
+    margin: 12px 0 12px 24px;
+  }
+}
+.interior .articleFooter {
+  padding: 0;
+}
+.interior .shareWrapper {
+  min-height: initial;
+  margin: 0;
+}
+.interior .shareWrapper p, .interior .shareWrapper .socialWrapper {
+  display: inline-block;
+  width: auto;
+}
+.interior p {
+  margin: 0;
+}
+.interior .socialWrapper {
+  margin-left: 12px;
+}
+.interior .socialWrapper li {
+  display: inline-block;
+  margin: 0 6px;
+}
+.interior .articleContribWrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 12px;
+}
+.interior .articleContribWrapper .imgWrapper, .interior .articleContribWrapper .articleContribBio {
+  display: inline-block;
+  -webkit-box-flex: 0;
+  -moz-box-flex: 0;
+  box-flex: 0;
+  -webkit-flex: 0 1 auto;
+  -moz-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+}
+.interior .articleContribWrapper .imgWrapper {
+  width: 20%;
+}
+.interior .articleContribWrapper .imgWrapper img {
+  border-radius: 50%;
+  height: auto;
+  width: 100%;
+  max-width: 250px;
+}
+.interior .articleContribWrapper .articleContribBio {
+  margin-left: 12px;
+  width: 80%;
+}
+@media only screen and (min-width: 800px) {
+  .interior {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .interior .masthead, .interior main {
+    -webkit-box-flex: 0;
+    -moz-box-flex: 0;
+    box-flex: 0;
+    -webkit-flex: 0 1 auto;
+    -moz-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+  }
+  .interior .masthead {
+    width: 30%;
+  }
+  .interior main {
+    margin-top: 150px;
+    width: 70%;
+  }
+  .interior .siteFooter {
+    width: 100%;
+  }
+  .interior .siteLogo h1 {
+    font-size: 150%;
+  }
+}
+
+html {
+  background: white;
+}
+
+body {
+  color: black;
+}
+
+.siteFooter .bmoreLink em {
+  font-style: normal;
+}
+
+/*
+* Scut, a collection of Sass utilities
+* to ease and improve our implementations of common style-code patterns.
+* v1.1.2
+* Docs at http://davidtheclark.github.io/scut
+*/
+body {
+  font-family: aleoregular, serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.articleContent {
+  word-wrap: break-word;
+}
+.articleContent h1, .articleContent h2, .articleContent h3, .articleContent h4, .articleContent h5, .articleContent h6 {
+  font-family: aleoregular, serif;
+  font-size: 18px;
+  font-size: 1.125rem;
+}
+.articleContent sup, .articleContent sub {
+  font-size: 65%;
+}
+.articleContent .embedWrapper {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  max-width: 100%;
+}
+
+.eventList {
+  list-style: none;
+  margin: 0;
+}
+
+.eventItem {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  text-decoration: none;
+}
+.eventItem .dateWrapper, .eventItem .eventWrapper {
+  -webkit-box-flex: 0;
+  -moz-box-flex: 0;
+  box-flex: 0;
+  -webkit-flex: 0 1 auto;
+  -moz-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+}
+.eventItem .dateWrapper {
+  font-weight: bold;
+  text-align: center;
+  width: 30%;
+}
+.eventItem .dateWrapper .month, .eventItem .dateWrapper .date {
+  display: block;
+}
+.eventItem .eventWrapper {
+  padding-left: 12px;
+  width: 70%;
+}
+.eventItem .eventWrapper h4 {
+  margin-bottom: 0;
+}
+
+.icon {
+  font-family: 'icofont';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon {
+  display: inline-block;
+  text-align: center;
+  height: 22px;
+  width: 22px;
+}
+
+.iconWrapper .icon {
+  display: none;
+}
+.fontface.generatedcontent .iconWrapper .icon {
+  display: inline-block;
+}
+.fontface.generatedcontent .iconWrapper .iconFBText {
+  display: block;
+  overflow: hidden;
+  text-indent: 101%;
+  white-space: nowrap;
+  height: 1px;
+  width: 1px;
+}
+
+.noList, .noList li {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+@media only screen and (min-width: 800px) {
+  .navMenu {
+    display: none;
+  }
+}
+
+.siteNav {
+  display: none;
+}
+@media only screen and (min-width: 800px) {
+  .siteNav {
+    display: block;
+  }
+  .homepage .siteNav {
+    float: right;
+  }
+  .homepage .siteNav li {
+    display: inline-block;
+    position: relative;
+  }
+  .homepage .siteNav li:hover > .submenu, .homepage .siteNav li:focus > .submenu {
+    display: block;
+  }
+  .homepage .siteNav .submenu {
+    display: none;
+    margin: 0;
+    padding: 0 6px;
+    position: absolute;
+    top: 24px;
+    left: 0;
+  }
+}

@@ -1,0 +1,73 @@
+// GENERIC LAYOUT CLASSES
+*, *:before, *:after {
+	box-sizing:border-box;
+}
+
+.fullWidth {
+	width: 100% !important;
+}
+
+.halfWidth {
+	display: inline-block;
+	vertical-align: top;
+	width: 49.5%;
+}
+
+.alignLeft {
+	text-align: left;
+}
+
+.alignRight {
+	text-align: right;
+}
+
+.alignCenter {
+	margin-right:auto!important;
+	margin-left:auto!important;
+	text-align: center;
+}
+
+.hidden {
+	display: none;
+	visibility:none;
+}
+
+.show {
+	display:block;
+}
+
+.inlineElement {
+	display: inline !important;
+}
+
+.wrapperInline {
+	width: 100%;
+
+	.elementWrapper, .element {
+		display: inline-block;
+		margin-right: 10px;
+
+		&:last-of-type {
+			margin-right: 0;
+		}
+	}
+}
+
+.wrapperFlex {
+	@include display(inline-flex);
+
+	.elementWrapper, .element {
+		@include flex(1);
+		@include flex-basis(auto);
+		margin-right: 10px;
+	}
+
+	.no-flexbox & {
+		display: block;
+
+		.elementWrapper, .element {
+			display: inline-block;
+			width: auto;
+		}
+	}
+}
