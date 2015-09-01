@@ -1,18 +1,16 @@
-$color-offwhite : #F6F7F2;
-$color-offblack : #171E22;
-$color-greydk : #30383D;
-	$color-graydk : $color-greydk;
-$color-greyli : #768187;
-	$color-grayli : $color-greyli;
-$color-blue : #305061;
+$color-melon: #FF8133;
+$color-fiery: #F6083C;
+$color-sunburst: #FFC105;
+$color-charcoal: #4F524E;
+$color-cream: #CCC089;
 
-$color-orange:#da4f20;
-$color-lime: #92bd0a;
-	$color-limeli: lighten($color-lime,8);
-$color-cyan: #049d84;
-$color-violet:#9c3c86;
+$color-offwhite:lighten($color-cream, 28%);
+$color-offblack:darken($color-charcoal,20%);
 
-$borderTrans : 1px solid rgba(white,.25);
+$font-serif : eratolight, serif;
+$font-slabserif : ponsi_rounded_slabregular, serif;
+$font-mono : monoidregular, monospace;
+$font-mono-bold : monoidbold, monospace;
 
-$font-body : aleoregular, serif;
-$font-mono : bpmonoregular, monospace;
+$font-body: $font-serif;
+$font-heading: $font-slabserif;

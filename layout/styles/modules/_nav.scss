@@ -1,4 +1,17 @@
+@import '../libs/scrollbars';
+
+.siteNavWrapper {
+}
+
 .navMenu {
+	display:block;
+	padding:8px;
+	position: fixed;
+	top: 0;
+	@include size(100% 40px);
+	&.nav-up {
+		top: -40px;
+	}
 	@media only screen and (min-width:800px) {
 		display:none;
 	}
@@ -6,6 +19,34 @@
 
 .siteNav {
 	display:none;
+	@media only screen and (max-width:799px) {
+		@include scrollbars(1px, $color-charcoal);
+		overflow-y:scroll;
+		padding:36px 0 18px;
+		position:fixed;
+		top:0;
+		left:0;
+		@include size(100%);
+		.homepage & {
+			> li:first-of-type {
+				display:none;
+			}
+		}
+		li {
+			border-bottom-style: solid;
+			border-bottom-width: 1px;
+			&:last-of-type {
+				border:none;
+			}
+			a {
+				display:block;
+			}
+		}
+		.submenu {
+			border-top-style: solid;
+			border-top-width: 1px;
+		}		
+	}
 	@media only screen and (min-width:800px) {
 		display:block;
 		.homepage & {

@@ -1,0 +1,21 @@
+@import 'variables';
+
+.masthead {
+	&:before, &:after {
+		content:'';
+		opacity:0.6;
+		@include size(100%);
+		position:absolute;
+		top:0;
+		left:0;
+	}
+	&:before {
+		background-image:url("../images/headerimg1.jpg");
+		background-position:top center;
+		background-repeat:no-repeat;
+		background-size:275%;
+	}
+	&:after {
+		@include linear-gradient(130deg, $color-sunburst, $color-melon, $color-sunburst, $color-cream, $color-melon);
+	}
+}

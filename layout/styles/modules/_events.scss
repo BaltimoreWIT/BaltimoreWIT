@@ -1,28 +1,68 @@
+.homepage .events {
+	margin-bottom:36px;
+	padding:20px 14px;
+	.sectionHeading {
+		border-bottom:1px solid lighten($color-cream,20%);
+	}
+}
+
 .eventList {
 	list-style:none;
 	margin:0;
+	li {
+		border-bottom:1px solid lighten($color-cream,30%);
+		margin:0 0 12px;
+		&:last-of-type {
+			border-bottom:none;
+			margin-bottom:0;
+		}
+	}
 }
 
 .eventItem {
+	@include align-items(baseline);
 	@include display(flex);
-	margin:0;
 	text-decoration:none;
 	.dateWrapper, .eventWrapper {
 		@include flex(0 1 auto);
 	}
 	.dateWrapper {
+		background:white;
+		color:$color-fiery;
+		font-family:$font-mono;
 		font-weight:bold;
+		padding:6px;
 		text-align:center;
+		text-transform: uppercase;
 		width:30%;
 		.month, .date {
 			display:block;
+			line-height: 1;
+		}
+		.month {
+			@include scut-rem-fallback(11);
+		}
+		.date {
+			@include scut-rem-fallback(28);
 		}
 	}
 	.eventWrapper {
-		padding-left:12px;
+		line-height: 1.2;
+		padding:6px 6px 6px 12px;
 		width:70%;
-		h4 {
+		.eventTitle {
+			color:$color-fiery;
+			font-family:$font-mono;
 			margin-bottom:0;
+			text-transform: uppercase;
+		}
+		.eventMeta {
+			color:$color-charcoal;
+			span {
+				font-size:90%;
+				font-style:italic;
+				letter-spacing:-1px;
+			}
 		}
 	}
 }

@@ -1,3 +1,39 @@
-.btn {}
-.btnDefault {}
-.btnPrimary {}
+@import '../variables';
+
+.btn {
+	border-radius:9px;
+	display:inline-block;
+	font-family:$font-mono;
+	@include scut-rem-fallback(16);
+	font-weight:bold;
+	padding:16px;
+	text-align:center;
+	text-transform:uppercase;
+	@include transition (all .2s ease);
+	.btnWrapper & {
+		margin:0 12px;
+		&:first-child {
+			margin-left:0;
+		}
+		&:last-child {
+			margin-right:0;
+		}
+	}
+}
+.btnPrimary {
+	background-color:$color-fiery;
+	border:2px solid $color-fiery;
+	color:white;
+	min-width:90px;
+	&:hover {
+		background-color:darken($color-fiery,3%);
+	}
+}
+.btnDefault {
+	background-color:white;
+	border:2px solid $color-sunburst;
+	color:$color-fiery;
+	&:hover {
+		border-color: $color-fiery;
+	}
+}

@@ -1,22 +1,66 @@
 @import 'variables';
 
 html {
-	background:white;
+	background:$color-offwhite;
 }
 
 body {
-	color:black;
+	color:$color-offblack;
 }
 
 .siteHeader {
 }
 
+.siteNavWrapper {
+	a {
+		color:$color-offwhite;
+		&:hover, &:focus {
+			color:$color-fiery;
+		}
+	}
+}
+
+.navMenu {
+	@media only screen and (max-width:799px) {
+		background:$color-offblack;
+	}
+}
+
+.siteNav {
+	@media only screen and (max-width:799px) {
+		background:$color-offblack;
+	}
+	li {
+		border-bottom-color:$color-charcoal;
+	}
+	.submenu {
+		border-top-color:$color-charcoal;
+	}
+}
+
+.sectionHeading {
+	.blog & {
+		background-color:lighten($color-fiery,8%);
+	}
+	.careers & {
+		background-color:darken($color-sunburst,5%);
+	}
+	.community & {
+		background-color:darken($color-melon,8%);		
+	}
+	.news & {
+		background-color:lighten($color-melon,8%);
+	}
+}
+
+.sectionContent {
+	background-color:white;
+}
+
+
 .siteFooter {
 	.bmoreLink {
 		a:hover em {
-		}
-		em {
-			font-style: normal;
 		}
 	}
 }

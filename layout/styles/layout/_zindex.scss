@@ -1,0 +1,16 @@
+.navMenu {
+	z-index:99;
+}
+.siteNav {
+	z-index:90;
+}
+
+.siteLogoSecondary {
+	z-index:-1;
+}
+
+.masthead {
+	&:before, &:after {
+		z-index:-2;
+	}
+}

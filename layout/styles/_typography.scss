@@ -12,18 +12,46 @@ h1, h2, h3, h4, h5, h6 {
 	white-space:nowrap;
 }
 
-.siteHeader {
+.siteHeader {}
+
+.siteDesc {
+	.headline {
+		font-family:$font-mono;
+		@include scut-rem-fallback(20);
+		text-transform: uppercase;
+	}
+}
+
+.siteNavWrapper {
+	text-align:right;
+}
+
+.navMenu {
+	font-family:$font-heading;
+	@include scut-rem-fallback(16);
+	letter-spacing: 2px;
+	text-transform: lowercase;
+}
+
+.siteNav {
+	line-height: 2.5;
+	text-align:center;
+}
+
+.sectionHeading {
+	font-family:$font-heading;
+	@include scut-rem-fallback(28);
+	font-weight:bold;
+	text-transform:lowercase;
+	.events & {
+		@include scut-rem-fallback(36);
+	}
 }
 
 .siteFooter {
-}
-
-
-.articleHeader {
-}
-
-.heading {
-}
-
-.pageHeader, .sectionHeader {
+	.bmoreLink {
+		em {
+			font-style: normal;
+		}
+	}
 }

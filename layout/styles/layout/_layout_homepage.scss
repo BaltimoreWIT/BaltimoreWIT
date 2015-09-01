@@ -1,0 +1,80 @@
+@import '../modules/hero';
+
+.homepage {
+	section {
+		margin-bottom:12px;
+	}
+	.sectionHeading {
+		text-align:center;
+		a {
+			color:white;
+			text-decoration:none;
+		}
+	}
+	@media only screen and (max-width:799px) {
+		.news, .blog {
+			@include display(flex);
+			padding:0;
+			.sectionHeading, .sectionContent {
+				@include flex(0 1 auto);
+				padding:12px;
+			}
+			.sectionHeading {
+				width:30%;
+			}
+			.sectionContent {
+				padding-left:12px;
+				width:70%;
+			}
+		}
+		.careers, .community {
+			.sectionContent {
+				display:none;
+			}
+		}
+		.careers + .careers {
+			display:none;
+		}
+	}	
+	@media only screen and (min-width:800px) {
+		main {
+			@include display(flex);
+			@include flex-wrap(wrap);
+			position:relative;
+			padding-right:275px;
+			.news, .blog, .careers, .community {
+				@include flex(0 1 auto);
+				padding:0;
+				width:100%;
+				.sectionHeading {
+					font-size:85%;
+					padding:3px 6px;
+					text-transform:uppercase;
+					a {
+						text-decoration:none;
+					}
+				}
+				.sectionContent {
+					padding:0 24px 6px;
+				}
+			}
+			.events {
+				position:absolute;
+				top:-48px;
+				right:0;
+				width:250px;
+			}
+		}
+	}
+	@media only screen and (min-width:1024px) {
+		main {
+			padding-right:325px;
+			.news, .blog, .careers, .community {
+				width:48%;
+			}
+			.events {
+				width:300px;
+			}
+		}
+	}
+}

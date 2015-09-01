@@ -1,0 +1,81 @@
+.interior {
+	article {
+		padding:18px 36px;
+	}
+	.articleHeader {
+		margin-bottom:3px;
+	}
+	.articleContent {
+		margin-top:18px;
+		.imgWrapper {
+			text-align:center;
+			@media only screen and (min-width:600px) {
+				float:right;
+				margin:12px 0 12px 24px;
+			}
+		}
+	}
+	.articleFooter {
+		padding:0;
+	}
+	.shareWrapper {
+		min-height:initial;
+		margin:0;
+		p, .socialWrapper {
+			display:inline-block;
+			width:auto;
+		}
+	}
+	p {
+		margin:0;
+	}
+	.socialWrapper {
+		margin-left:12px;
+		li {
+			display:inline-block;
+			margin:0 6px;
+		}
+	}
+	.articleContribWrapper {
+		@include display(flex);
+		padding:12px;
+		.imgWrapper, .articleContribBio {
+			display:inline-block;
+			@include flex(0 1 auto);
+		}
+		.imgWrapper {
+			width:20%;
+			img {
+				border-radius:50%;
+				@include size(100% auto);
+				max-width:250px;
+			}
+		}
+		.articleContribBio {
+			margin-left:12px;
+			width:80%;
+		}
+	}
+	@media only screen and (min-width:800px) {
+		@include display(flex);
+		flex-wrap:wrap;
+		.masthead, main {
+			@include flex(0 1 auto);
+		}
+		.masthead {
+			width:30%;
+		}
+		main {
+			margin-top:150px;
+			width:70%;
+		}
+		.siteFooter {
+			width:100%;
+		}
+		.siteLogo {
+			h1 {
+				font-size:150%;
+			}
+		}
+	}
+}

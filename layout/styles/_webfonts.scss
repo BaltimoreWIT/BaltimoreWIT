@@ -1,9 +1,6 @@
 @import 'libs/scut';
 
-// @include scut-font-face("bpmonoregular", "../webfonts/BPmono-webfont", $formats: eot woff ttf svg);
-// @include scut-font-face("aleobold", "../webfonts/Aleo-Bold-webfont", $formats: eot woff ttf svg);
-// @include scut-font-face("aleobolditalic", "../webfonts/Aleo-BoldItalic-webfont", $formats: eot woff ttf svg);
-// @include scut-font-face("aleoitalic", "../webfonts/Aleo-Italic-webfont", $formats: eot woff ttf svg);
-// @include scut-font-face("aleolight", "../webfonts/Aleo-Light-webfont", $formats: eot woff ttf svg);
-// @include scut-font-face("aleolightitalic", "../webfonts/Aleo-LightItalic-webfont", $formats: eot woff ttf svg);
-// @include scut-font-face("aleoregular", "../webfonts/Aleo-Regular-webfont", $formats: eot woff ttf svg);
+@include scut-font-face('eratolight', '../webfonts/eratolig-webfont');
+@include scut-font-face('monoidregular', '../webfonts/monoid-regular-webfont');
+@include scut-font-face('monoidbold', '../webfonts/monoid-bold-webfont');
+@include scut-font-face('ponsi_rounded_slabregular', '../webfonts/PonsRoundedSlab-Regular-webfont');
