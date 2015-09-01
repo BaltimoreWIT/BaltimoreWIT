@@ -47,22 +47,25 @@
 		}
 	}
 	.eventWrapper {
+		color:$color-charcoal;
 		line-height: 1.2;
 		padding:6px 6px 6px 12px;
 		width:70%;
 		.eventTitle {
-			color:$color-fiery;
 			font-family:$font-mono;
+			font-weight:bold;
 			margin-bottom:0;
 			text-transform: uppercase;
 		}
-		.eventMeta {
-			color:$color-charcoal;
-			span {
-				font-size:90%;
-				font-style:italic;
-				letter-spacing:-1px;
-			}
+	}
+	&:hover, &:focus {
+		.dateWrapper {
+			background:$color-fiery;
+			color:white;
+		}
+		.eventTitle span {
+			background-color:rgba($color-sunburst,0.5);
 		}
 	}
+
 }

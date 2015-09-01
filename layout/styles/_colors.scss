@@ -38,18 +38,38 @@ body {
 	}
 }
 
+.blog {
+	border-top-color:lighten($color-fiery,8%);
+	.articleHeadline a {
+		&:hover, &:focus {
+			color:lighten($color-fiery,8%);
+		}
+	}
+}
+.news {
+	border-top-color:lighten($color-melon,8%);
+	.articleHeadline a {
+		&:hover, &:focus {
+			color:lighten($color-melon,8%);
+		}
+	}
+}
+
 .sectionHeading {
-	.blog & {
-		background-color:lighten($color-fiery,8%);
+	.news &, .blog & {
+		background-color: $color-charcoal;
 	}
 	.careers & {
 		background-color:darken($color-sunburst,5%);
+		&:hover, &:focus {
+			background-color:$color-sunburst;
+		}
 	}
 	.community & {
-		background-color:darken($color-melon,8%);		
-	}
-	.news & {
-		background-color:lighten($color-melon,8%);
+		background-color:darken($color-melon,8%);
+		&:hover, &:focus {
+			background-color:$color-melon;
+		}
 	}
 }
 
@@ -57,6 +77,9 @@ body {
 	background-color:white;
 }
 
+.articleHeadline a {
+	color:$color-charcoal;
+}
 
 .siteFooter {
 	.bmoreLink {

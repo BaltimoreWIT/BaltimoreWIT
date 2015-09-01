@@ -2,8 +2,7 @@
 	.siteLogo {
 		background:url(../images/bwit_logotext_dk.png) no-repeat;
 		background-size:contain;
-		@include size(100%);		
-		min-height: 60px;
+		@include size(auto 60px);
 	}
 	.siteLogoSecondary {
 		background:url(../images/bwit_flower.png) no-repeat;
@@ -52,5 +51,4 @@
 			display:none;
 		}
 	}
-	
 }

@@ -356,42 +356,10 @@
 	"buffers":
 	[
 		{
-			"file": "layout/styles/modules/_events.scss",
-			"settings":
-			{
-				"buffer_size": 1139,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "layout/styles/layout/_layout_homepage.scss",
 			"settings":
 			{
-				"buffer_size": 1326,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "layout/styles/_colors.scss",
-			"settings":
-			{
-				"buffer_size": 765,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "layout/webfonts/eratolig-webfont.eot",
-			"settings":
-			{
-				"buffer_size": 75300,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "layout/styles/_typography.scss",
-			"settings":
-			{
-				"buffer_size": 738,
+				"buffer_size": 1709,
 				"line_ending": "Windows"
 			}
 		},
@@ -399,8 +367,59 @@
 			"file": "layout/index.html",
 			"settings":
 			{
-				"buffer_size": 13913,
+				"buffer_size": 14193,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "layout/styles/_typography.scss",
+			"settings":
+			{
+				"buffer_size": 1007,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "layout/styles/layout/_layout.scss",
+			"settings":
+			{
+				"buffer_size": 941,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "layout/styles/_colors.scss",
+			"settings":
+			{
+				"buffer_size": 1248,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "@import '../variables';\n\n.btn {\n	border-radius:9px;\n	display:inline-block;\n	font-family:$font-mono;\n	@include scut-rem-fallback(16);\n	font-weight:bold;\n	padding:16px;\n	text-align:center;\n	text-transform:uppercase;\n	.btnWrapper & {\n		margin:0 12px;\n		&:first-child {\n			margin-left:0;\n		}\n		&:last-child {\n			margin-right:0;\n		}\n	}\n}\n.btnPrimary {\n	background-color:$color-fiery;\n	border:2px solid $color-fiery;\n	color:white;\n	min-width:90px;\n	&:hover {\n		background-color:darken($color-fiery,3%);\n	}\n}\n.btnDefault {\n	background-color:white;\n	border:2px solid $color-sunburst;\n	color:$color-fiery;\n	&:hover {\n		border-color: $color-fiery;\n	}\n}",
+			"file": "layout/styles/modules/_buttons.scss",
+			"file_size": 717,
+			"file_write_time": 130850168047307470,
+			"settings":
+			{
+				"buffer_size": 642,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "layout/styles/_animations.scss",
+			"settings":
+			{
+				"buffer_size": 180,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "layout/styles/modules/_events.scss",
+			"settings":
+			{
+				"buffer_size": 1216,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -500,26 +519,29 @@
 	},
 	"file_history":
 	[
+		"/C/Users/angelique/Documents/biz/projects/wit site/site/layout/styles/_colors.scss",
+		"/C/Users/angelique/Documents/biz/projects/wit site/site/layout/styles/layout/_layout.scss",
+		"/C/Users/angelique/Documents/biz/projects/wit site/site/layout/styles/modules/_modules.scss",
+		"/C/Users/angelique/Documents/biz/projects/wit site/site/layout/styles/layout/_layout_homepage.scss",
+		"/C/Users/angelique/Documents/biz/projects/wit site/site/layout/index.html",
+		"/C/Users/angelique/Documents/biz/projects/wit site/site/layout/styles/_typography.scss",
+		"/C/Users/angelique/Documents/biz/projects/wit site/site/layout/styles/modules/_events.scss",
+		"/C/Users/angelique/Documents/biz/projects/wit site/site/layout/styles/site.css",
+		"/C/Users/angelique/Documents/biz/projects/wit site/site/layout/styles/modules/_hero.scss",
+		"/C/Users/angelique/Documents/biz/projects/wit site/site/layout/styles/modules/_buttons.scss",
+		"/C/Users/angelique/Documents/biz/projects/wit site/site/layout/webfonts/eratolig-webfont.eot",
 		"/C/Users/angelique/Documents/biz/projects/wit site/site/layout/interior.html",
 		"/C/Users/angelique/Documents/biz/projects/wit site/site/layout/styles/modules/_nav.scss",
 		"/C/Users/angelique/Documents/biz/projects/wit site/site/layout/styles/libs/_scrollbars.scss",
-		"/C/Users/angelique/Documents/biz/projects/wit site/site/layout/styles/modules/_hero.scss",
 		"/C/Users/angelique/Documents/biz/projects/wit site/site/layout/styles/_layout_homepage.scss",
 		"/C/Users/angelique/Documents/biz/projects/wit site/site/layout/styles/site.scss",
 		"/C/Users/angelique/Documents/biz/projects/wit site/site/layout/styles/_layout.scss",
-		"/C/Users/angelique/Documents/biz/projects/wit site/site/layout/styles/modules/_modules.scss",
-		"/C/Users/angelique/Documents/biz/projects/wit site/site/layout/styles/modules/_buttons.scss",
 		"/C/Users/angelique/Documents/biz/projects/wit site/site/layout/styles/modules/_article.scss",
 		"/C/Users/angelique/Documents/biz/projects/wit site/site/layout/styles/libs/_mq.scss",
 		"/C/Users/angelique/Documents/biz/projects/wit site/site/layout/styles/_zindex.scss",
 		"/C/Users/angelique/Documents/biz/projects/wit site/site/layout/styles/_animations.scss",
-		"/C/Users/angelique/Documents/biz/projects/wit site/site/layout/styles/modules/_events.scss",
-		"/C/Users/angelique/Documents/biz/projects/wit site/site/layout/index.html",
 		"/C/Users/angelique/Documents/biz/projects/wit site/site/layout/styles/_variables.scss",
-		"/C/Users/angelique/Documents/biz/projects/wit site/site/layout/styles/_colors.scss",
-		"/C/Users/angelique/Documents/biz/projects/wit site/site/layout/styles/_typography.scss",
 		"/C/Users/angelique/Documents/biz/projects/wit site/site/layout/styles/_backgrounds.scss",
-		"/C/Users/angelique/Documents/biz/projects/wit site/site/layout/styles/site.css",
 		"/C/Users/angelique/Documents/biz/projects/wit site/site/layout/js/vendor/jquery.typer.js",
 		"/C/Users/angelique/Documents/biz/projects/wit site/site/layout/styles/style.css.scss",
 		"/C/Sites/wic_website/app/assets/stylesheets/_layout.scss",
@@ -624,10 +646,7 @@
 		"/C/Sites/devj/source/styles/libs/bourbon/_bourbon-deprecated-upcoming.scss",
 		"/C/Sites/devj/source/styles/_colors.scss",
 		"/C/Sites/devj/source/styles/modules/_lists.scss",
-		"/C/Sites/devj/source/styles/_layout.scss",
-		"/C/Sites/devj/source/styles/site.scss",
-		"/C/Sites/devj/source/layouts/article.html.erb",
-		"/C/Sites/devj/source/styles/modules/_modules.scss"
+		"/C/Sites/devj/source/styles/_layout.scss"
 	],
 	"find":
 	{
@@ -652,6 +671,15 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"meta-more",
+			"only screen",
+			"background",
+			" &",
+			"            <p class='meta'>\n              by\n              <span>Author Name</span>\n            </p>\n",
+			"meta",
+			"logo",
+			"events",
+			"btnwra",
 			"events",
 			"wrapper",
 			"z-index",
@@ -770,16 +798,7 @@
 			"$greyli",
 			"$grayli",
 			"$graydk",
-			"$greydk",
-			"$black",
-			"$white",
-			"$limeli",
-			"$green",
-			"tag",
-			"article",
-			"headline",
-			"scroll",
-			"archiveHeadline"
+			"$greydk"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -787,6 +806,11 @@
 		"regex": false,
 		"replace_history":
 		[
+			"metaContinueReading",
+			"screen only",
+			"border",
+			"",
+			"            <p class='meta'>\n              <span>by</span> \n              Author Name\n            </p>\n",
 			" <span>pm</span></span>",
 			" <span>am</span></span>",
 			"<span>am</span></span>",
@@ -909,12 +933,7 @@
 			"120px",
 			"jpg\" style=\"height:150px;width:auto;\">",
 			"'",
-			"<li style=\"display:inline-block;float:left;\">",
-			"",
-			"display:inline;float:left;width:25%;",
-			"</li>\n						<li",
-			"",
-			"sass"
+			"<li style=\"display:inline-block;float:left;\">"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -925,23 +944,23 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "layout/styles/modules/_events.scss",
+					"file": "layout/styles/layout/_layout_homepage.scss",
 					"settings":
 					{
-						"buffer_size": 1139,
+						"buffer_size": 1709,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								118,
-								118
+								382,
+								382
 							]
 						],
 						"settings":
@@ -960,136 +979,18 @@
 				},
 				{
 					"buffer": 1,
-					"file": "layout/styles/layout/_layout_homepage.scss",
-					"settings":
-					{
-						"buffer_size": 1326,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								115,
-								115
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "layout/styles/_colors.scss",
-					"settings":
-					{
-						"buffer_size": 765,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								296,
-								296
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 167.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "layout/webfonts/eratolig-webfont.eot",
-					"settings":
-					{
-						"buffer_size": 75300,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "layout/styles/_typography.scss",
-					"settings":
-					{
-						"buffer_size": 738,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								491,
-								491
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 41.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
 					"file": "layout/index.html",
 					"settings":
 					{
-						"buffer_size": 13913,
+						"buffer_size": 14193,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								10970,
-								10970
+								8091,
+								8091
 							]
 						],
 						"settings":
@@ -1102,7 +1003,186 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 5673.0,
+						"translation.y": 4504.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "layout/styles/_typography.scss",
+					"settings":
+					{
+						"buffer_size": 1007,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								510,
+								510
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 603.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "layout/styles/layout/_layout.scss",
+					"settings":
+					{
+						"buffer_size": 941,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								294,
+								294
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 288.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "layout/styles/_colors.scss",
+					"settings":
+					{
+						"buffer_size": 1248,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								974,
+								974
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 979.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "layout/styles/modules/_buttons.scss",
+					"settings":
+					{
+						"buffer_size": 642,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								214,
+								214
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "layout/styles/_animations.scss",
+					"settings":
+					{
+						"buffer_size": 180,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								139,
+								139
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "layout/styles/modules/_events.scss",
+					"settings":
+					{
+						"buffer_size": 1216,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1157,
+								1157
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 838.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1147,7 +1227,7 @@
 	},
 	"replace":
 	{
-		"height": 116.0
+		"height": 273.0
 	},
 	"save_all_on_build": true,
 	"select_file":

@@ -39,12 +39,31 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .sectionHeading {
-	font-family:$font-heading;
-	@include scut-rem-fallback(28);
+	font-family:$font-mono;
+	@include scut-rem-fallback(20);
 	font-weight:bold;
-	text-transform:lowercase;
+	letter-spacing:2px;
+	text-align:center;
+	text-transform:uppercase;
 	.events & {
+		font-family:$font-heading;
 		@include scut-rem-fallback(36);
+		text-transform:lowercase;
+	}
+}
+
+article.sectionContent {
+	.meta {
+		line-height:1;
+		margin-bottom:15px;
+	}
+}
+
+.meta, .eventMeta {
+	span {
+		font-size:90%;
+		font-style:italic;
+		letter-spacing:-1px;
 	}
 }
 

@@ -22,14 +22,6 @@
 	padding:72px 36px 36px;
 }
 
-.sectionHeading {
-	@include display(flex);
-	@include align-items(stretch);
-	a {
-		display:block;
-	}
-}
-
 .siteFooter {
 	.donateCTA {
 		display:block;
@@ -70,6 +62,6 @@
 @import 'layout_homepage';
 
 // INTERIOR
-@import 'layout_homepage';
+@import 'layout_interior';
 
 @import 'zindex';

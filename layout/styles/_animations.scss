@@ -6,3 +6,6 @@
 .navMenu {
 	@include transition(top 0.2s ease-in-out);
 }
+.btn, a, .isLink {
+	@include transition (all .2s ease);
+}
