@@ -8,6 +8,7 @@
     <link href="styles/site.css" media="all" rel="stylesheet" />
     <meta content='width=device-width, initial-scale=1' name='viewport'>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <pre class="prettyprint"><script type="text/javascript" src="http://baltimorewit.tumblr.com/api/read/json"></script></pre>
   </head>
   <body>
     <div class='homepage siteWrapper'>
@@ -198,13 +199,13 @@
           </h3>
           <article class='sectionContent'>
             <h4 class='articleHeadline'>
-              <a href='#'>Blog Article Title</a>
+              <a href='#'><script>document.write(tumblr_api_read['posts'][0]['regular-title'])</script></a>
             </h4>
             <p class='meta'>
               <span>by</span> 
               Author Name
             </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt qui, a id deserunt exercitationem, in ut ratione dolorem soluta aut minima! Laborum ratione, laudantium ad delectus. Mollitia aut suscipit eaque? <span class="metaContinueReading">&hellip; <a href="#">read more</a></span></p>
+            <p><script>document.write(tumblr_api_read['posts'][0]['regular-body'].replace(/<\/p>/,"").replace(/<p>/, ""));</script><span class="metaContinueReading">&hellip; <a href="#">read more</a></span></p>
           </article>
         </section>
         <section class='blog'>
@@ -213,13 +214,13 @@
           </h3>
           <article class='sectionContent'>
             <h4 class='articleHeadline'>
-              <a href='#'>Interviewee Name</a>
+              <a href='#'><script>document.write(tumblr_api_read['posts'][1]['regular-title'])</script></a>
             </h4>
             <p class='meta'>
               interviewed by
               <span>Author Name</span>
             </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt qui, a id deserunt exercitationem, in ut ratione dolorem soluta aut minima! Laborum ratione, laudantium ad delectus. Mollitia aut suscipit eaque? <span class="metaContinueReading">&hellip; <a href="#">read more</a></span></p>
+            <p><script>document.write(tumblr_api_read['posts'][1]['regular-body'])</script><span class="metaContinueReading">&hellip; <a href="#">read more</a></span></p>
           </article>
         </section>
         <section class='careers'>
