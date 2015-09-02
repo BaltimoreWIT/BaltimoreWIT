@@ -205,7 +205,7 @@
               <span>by</span> 
               Author Name
             </p>
-            <p><script>document.write(tumblr_api_read['posts'][0]['regular-body'].replace(/<\/p>/,"").replace(/<p>/, ""));</script><span class="metaContinueReading">&hellip; <a href="#">read more</a></span></p>
+            <p><script>document.write(tumblr_api_read['posts'][0]['regular-body'].replace(/<\/p>/,"<\/div>").replace(/<p>/, "<div class=\"articleContent\">"));</script><span class="metaContinueReading">&hellip; <a href="#">read more</a></span></p>
           </article>
         </section>
         <section class='blog'>
@@ -220,7 +220,7 @@
               interviewed by
               <span>Author Name</span>
             </p>
-            <p><script>document.write(tumblr_api_read['posts'][1]['regular-body'])</script><span class="metaContinueReading">&hellip; <a href="#">read more</a></span></p>
+            <p><script>document.write(tumblr_api_read['posts'][1]['regular-body'].replace(/<\/p>/,"<\/div>").replace(/<p>/, "<div class=\"articleContent\">"));</script><span class="metaContinueReading">&hellip; <a href="#">read more</a></span></p>
           </article>
         </section>
         <section class='careers'>
