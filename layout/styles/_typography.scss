@@ -45,6 +45,9 @@ h1, h2, h3, h4, h5, h6 {
 	letter-spacing:2px;
 	text-align:center;
 	text-transform:uppercase;
+	a {
+		text-decoration: none;
+	}
 	.events & {
 		font-family:$font-heading;
 		@include scut-rem-fallback(36);
@@ -56,6 +59,18 @@ article.sectionContent {
 	.meta {
 		line-height:1;
 		margin-bottom:15px;
+	}
+}
+
+.articleHeadline {
+	font-family:$font-heading;
+	font-weight: bold;
+	@include scut-rem-fallback(22);
+}
+
+.homepage article {
+	.metaContinueReading {
+		font-size:90%;
 	}
 }
 

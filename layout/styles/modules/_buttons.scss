@@ -9,7 +9,6 @@
 	padding:16px;
 	text-align:center;
 	text-transform:uppercase;
-	@include transition (all .2s ease);
 	.btnWrapper & {
 		margin:0 12px;
 		&:first-child {
@@ -23,7 +22,7 @@
 .btnPrimary {
 	background-color:$color-fiery;
 	border:2px solid $color-fiery;
-	color:white;
+	color:white!important;
 	min-width:90px;
 	&:hover {
 		background-color:darken($color-fiery,3%);
