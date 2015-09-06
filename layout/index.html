@@ -8,6 +8,9 @@
     <link href="styles/site.css" media="all" rel="stylesheet" />
     <meta content='width=device-width, initial-scale=1' name='viewport'>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- Using v1 of the tumblr API for now since v2 has a bug in it that prevents some needed features
+      http://stackoverflow.com/questions/26233009/how-to-get-tagged-posts-for-a-specific-blog-using-tumblr-api-v2
+    -->
     <pre class="prettyprint"><script type="text/javascript" src="http://baltimorewit.tumblr.com/api/read/json"></script></pre>
   </head>
   <body>
@@ -183,14 +186,27 @@
             <a href='#' title="View All News">News</a>
           </h3>
           <article class='sectionContent'>
+            <script type="text/javascript">    
+              var newsBody = "";    
+              var newsTitle = "";   
+              var posts = tumblr_api_read['posts'];
+              for(i = 0; i < posts.length; i++) {
+                var tags = tumblr_api_read['posts'][i]['tags'];
+                if(tags.indexOf("news") != -1) {
+                  newsPost = tumblr_api_read['posts'][i]['regular-body'].replace(/<\/p>/,"<\/div>").replace(/<p>/, "<div class=\"articleContent\">");
+                  newsTitle = tumblr_api_read['posts'][i]['regular-title'];
+                  break;
+                }
+              }
+            </script>
             <h4 class='articleHeadline'>
-              <a href='#'>News Article Headline</a>
+              <a href='#'><script>document.write(newsTitle)</script></a>
             </h4>
             <p class='meta'>
               <span>by</span> 
               Author Name
             </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis quas ab voluptate, distinctio dolore ratione quia, nostrum beatae eius facilis cupiditate. Eveniet recusandae distinctio possimus fuga id ipsa quisquam eligendi. <span class="metaContinueReading">&hellip; <a href="#">read more</a></span></p>
+            <p><script>document.write(newsPost)</script><span class="metaContinueReading">&hellip; <a href="#">read more</a></span></p>
           </article>
         </section>
         <section class='blog'>
