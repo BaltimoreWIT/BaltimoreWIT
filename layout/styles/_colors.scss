@@ -38,39 +38,92 @@ body {
 	}
 }
 
-.blog {
-	border-top-color:lighten($color-fiery,8%);
-	.articleHeadline a {
-		&:hover, &:focus {
-			color:lighten($color-fiery,8%);
+.homepage .events {
+	.sectionHeading, .eventList li {
+		border-bottom-color:lighten($color-cream,20%);
+	}
+	.dateWrapper {
+		@include linear-gradient(to right, $color-fiery, $color-fiery 50%, white 50%, white);
+		background-position:100% 0;
+		background-size:200% 100%;
+		color:$color-fiery;		
+	}
+	.eventWrapper {
+		color:$color-charcoal;
+		span {
+			@include linear-gradient(to right, rgba($color-sunburst,0.5), rgba($color-sunburst,0.5) 50%, transparent 50%, transparent);
+			background-color:transparent;
+			background-position:100% 0;
+			background-size:200% 100%;
 		}
 	}
-}
-.news {
-	border-top-color:lighten($color-melon,8%);
-	.articleHeadline a {
+	.eventItem {
 		&:hover, &:focus {
-			color:lighten($color-melon,8%);
+			.dateWrapper, .eventTitle span {
+				background-position:0 0;
+			}
+			.dateWrapper {
+				color:white;
+			}
+		}		
+	}
+}
+
+.homepage {
+	.sectionHeading {
+		background-position:100% 0;
+		background-size:200% 100%;
+		a {
+			color:white;
+		}				
+		&:hover, &:focus {
+			background-position:0 0;
+		}
+	}
+	article {
+		.metaContinueReading a {
+			color:$color-fiery;
+			&:hover, &:focus {
+				color:darken($color-fiery,8%);
+			}
 		}
 	}
 }
 
-.sectionHeading {
-	.news &, .blog & {
-		background-color: $color-charcoal;
-	}
-	.careers & {
-		background-color:darken($color-sunburst,5%);
-		&:hover, &:focus {
-			background-color:$color-sunburst;
+// Hompage sections
+@mixin theme($name, $color) {
+	$themePrimary: $color;
+	$themeSecondary: darken($color, 3%);
+
+	.homepage .#{$name} {
+		border-top-color:$themePrimary;
+		&.fullView {
+			.sectionHeading {
+				@include linear-gradient(to right, $themePrimary, $themePrimary 50%, $color-charcoal 50%, $color-charcoal);
+			}
+			.articleHeadline a {
+				&:hover, &:focus {
+					color:$themeSecondary;
+				}
+			}
+		}
+		&.minView {
+			.sectionHeading {
+				@include linear-gradient(to right, $themeSecondary, $themeSecondary 50%, $themePrimary 50%, $themePrimary);
+			}
 		}
 	}
-	.community & {
-		background-color:darken($color-melon,8%);
-		&:hover, &:focus {
-			background-color:$color-melon;
-		}
-	}
+}
+
+$sections: (
+	blog: $color-fiery,
+	news: darken($color-melon,3%),
+	careers: $color-sunburst,
+	community: lighten($color-melon,3%)
+	) !default;
+
+@each $section, $color in $sections {
+	@include theme($section, $color);
 }
 
 .sectionContent {
@@ -82,8 +135,21 @@ body {
 }
 
 .siteFooter {
-	.bmoreLink {
-		a:hover em {
+	background:darken($color-charcoal,15%);
+	color:lighten($color-cream,8%);
+	a {
+		color:lighten($color-cream,20%);
+		&:hover, &:focus {
+			color:lighten($color-fiery,12%);
 		}
+	}
+	.bmoreLink {
+		a {
+			&:hover, &:focus {
+				em {
+					color:darken($color-fiery,12%);
+				}
+			}
+		}	
 	}
 }

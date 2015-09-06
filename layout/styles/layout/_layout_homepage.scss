@@ -1,36 +1,18 @@
 @import '../modules/hero';
 
 .homepage {
-	.news, .blog {
+	.fullView {
 		border-style:solid;
 		border-top-width:9px;
 	}
-	.sectionHeading {
+	.sectionHeading, .articleHeadline {
 		a {
-			color:white;
 			display:block;
-			text-decoration:none;
 			width:100%;
 		}
 	}
-	.articleHeadline {
-		font-family:$font-heading;
-		font-weight: bold;
-		@include scut-rem-fallback(22);
-		a {
-			display:block;
-		}
-	}
-	article {
-		.metaContinueReading {
-			font-size:90%;
-			a {
-				color:$color-fiery;
-			}
-		}
-	}
 	@media only screen and (max-width:799px) {
-		.news, .blog {
+		.fullView {
 			@include display(flex);
 			padding:0;
 			.sectionHeading, .sectionContent {
@@ -47,7 +29,7 @@
 				width:70%;
 			}
 		}
-		.careers, .community {
+		.minView {
 			.sectionHeading a {
 				padding:18px 0;
 			}
