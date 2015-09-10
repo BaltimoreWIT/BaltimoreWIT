@@ -4,6 +4,31 @@
 	.fullView {
 		border-style:solid;
 		border-top-width:9px;
+		.sectionHeading, .sectionContent {
+			padding:12px;
+		}
+		@media only screen and (max-width:339px) {
+			.sectionHeading { width:30%; }
+			.sectionContent { width:70%; }
+		}
+		@media only screen and (min-width:340px) and (max-width:379px) {
+			.sectionHeading { width:25%; }
+			.sectionContent { width:75%; }
+		}
+		@media only screen and (min-width:380px) {
+			.sectionContent {
+				padding-right:24px;
+				padding-left:24px;
+			}
+		}
+		@media only screen and (min-width:380px) and (max-width:579px) {
+			.sectionHeading { width:20%; }
+			.sectionContent { width:80%; }		
+		}
+		@media only screen and (min-width:580px) and (max-width:799px) {
+			.sectionHeading { width:15%; }
+			.sectionContent { width:85%; }		
+		}
 	}
 	.sectionHeading, .articleHeadline {
 		a {
@@ -17,16 +42,10 @@
 			padding:0;
 			.sectionHeading, .sectionContent {
 				@include flex(0 1 auto);
-				padding:12px;
 			}
 			.sectionHeading {
 				@include align-items(stretch);
 				@include display(flex);
-				width:30%;
-			}
-			.sectionContent {
-				padding-left:12px;
-				width:70%;
 			}
 		}
 		.minView {

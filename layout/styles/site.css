@@ -293,9 +293,19 @@ textarea {
   margin: 0 0 75px;
   position: relative;
 }
+@media only screen and (min-width: 730px) {
+  .masthead {
+    margin-bottom: 20px;
+  }
+}
 
 .siteHeader {
   padding: 72px 36px 36px;
+}
+@media only screen and (min-width: 460px) {
+  .siteHeader {
+    padding-bottom: 60px;
+  }
 }
 
 .siteFooter {
@@ -309,7 +319,10 @@ textarea {
   width: 100%;
 }
 .siteFooter .bmoreLink {
-  margin: 24px 0;
+  margin: 48px 0;
+}
+.siteFooter .bmoreLink em {
+  padding: 0 3px;
 }
 .siteFooter .legal {
   margin-bottom: 0;
@@ -333,8 +346,10 @@ textarea {
     -moz-flex: 0 1 auto;
     -ms-flex: 0 1 auto;
     flex: 0 1 auto;
-    margin-top: 28px;
     width: 45%;
+  }
+  .siteFooter .donateCTA {
+    margin-top: 14px;
   }
   .siteFooter .socialWrapper {
     margin-left: 18px;
@@ -342,13 +357,28 @@ textarea {
   .siteFooter p {
     width: 100%;
   }
+  .siteFooter .legal {
+    text-align: center;
+  }
 }
 
 .homepage .siteHeader .siteLogo {
   background: url(../images/bwit_logotext_dk.png) no-repeat;
+  background-position: top center;
   background-size: contain;
   height: 60px;
   width: auto;
+}
+@media only screen and (min-width: 400px) {
+  .homepage .siteHeader .siteLogo {
+    height: 75px;
+  }
+}
+@media only screen and (min-width: 500px) {
+  .homepage .siteHeader .siteLogo {
+    margin: 24px auto 48px;
+    text-align: center;
+  }
 }
 .homepage .siteHeader .siteLogoSecondary {
   background: url(../images/bwit_flower.png) no-repeat;
@@ -376,11 +406,34 @@ textarea {
   margin-left: -3px;
   padding: 6px 3px;
 }
+@media only screen and (min-width: 380px) {
+  .homepage .siteHeader .siteDesc .headline {
+    min-height: 190px;
+  }
+}
+@media only screen and (min-width: 500px) {
+  .homepage .siteHeader .siteDesc .headline {
+    min-height: 165px;
+  }
+}
+@media only screen and (min-width: 500px) and (max-width: 729px) {
+  .homepage .siteHeader .siteDesc .headline {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    max-width: 600px;
+  }
+}
 .homepage .siteHeader .siteDesc .btnWrapper {
   margin: 18px 0 36px;
   text-align: center;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 400px) {
+  .homepage .siteHeader .siteDesc .btnWrapper .btn {
+    min-width: 150px;
+  }
+}
+@media only screen and (min-width: 730px) {
   .homepage .siteHeader {
     display: -webkit-box;
     display: -moz-box;
@@ -402,13 +455,16 @@ textarea {
     flex: 0 1 auto;
   }
   .homepage .siteHeader .siteLogo {
-    width: 25%;
+    background-image: url(../images/bwit_v_li.png);
+    height: auto;
+    width: 35%;
   }
   .homepage .siteHeader .siteLogo h1 {
     font-size: 150%;
   }
   .homepage .siteHeader .siteDesc {
-    width: 75%;
+    margin-left: 48px;
+    width: 65%;
   }
   .homepage .siteHeader .siteLogoSecondary {
     display: none;
@@ -418,6 +474,47 @@ textarea {
 .homepage .fullView {
   border-style: solid;
   border-top-width: 9px;
+}
+.homepage .fullView .sectionHeading, .homepage .fullView .sectionContent {
+  padding: 12px;
+}
+@media only screen and (max-width: 339px) {
+  .homepage .fullView .sectionHeading {
+    width: 30%;
+  }
+  .homepage .fullView .sectionContent {
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 340px) and (max-width: 379px) {
+  .homepage .fullView .sectionHeading {
+    width: 25%;
+  }
+  .homepage .fullView .sectionContent {
+    width: 75%;
+  }
+}
+@media only screen and (min-width: 380px) {
+  .homepage .fullView .sectionContent {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+}
+@media only screen and (min-width: 380px) and (max-width: 579px) {
+  .homepage .fullView .sectionHeading {
+    width: 20%;
+  }
+  .homepage .fullView .sectionContent {
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 580px) and (max-width: 799px) {
+  .homepage .fullView .sectionHeading {
+    width: 15%;
+  }
+  .homepage .fullView .sectionContent {
+    width: 85%;
+  }
 }
 .homepage .sectionHeading a, .homepage .articleHeadline a {
   display: block;
@@ -442,7 +539,6 @@ textarea {
     -moz-flex: 0 1 auto;
     -ms-flex: 0 1 auto;
     flex: 0 1 auto;
-    padding: 12px;
   }
   .homepage .fullView .sectionHeading {
     -webkit-box-align: stretch;
@@ -461,11 +557,6 @@ textarea {
     display: -moz-flex;
     display: -ms-flexbox;
     display: flex;
-    width: 30%;
-  }
-  .homepage .fullView .sectionContent {
-    padding-left: 12px;
-    width: 70%;
   }
   .homepage .minView .sectionHeading a {
     padding: 18px 0;
@@ -678,7 +769,7 @@ textarea {
   transition: all 0.2s ease;
 }
 
-.icon, .icon path {
+.icon, .icon path, .bmoreLink em {
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
@@ -948,6 +1039,12 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.25rem;
   text-transform: uppercase;
 }
+@media only screen and (min-width: 380px) {
+  .siteDesc .headline {
+    font-size: 24px;
+    font-size: 1.5rem;
+  }
+}
 
 .siteNavWrapper {
   text-align: right;
@@ -1007,7 +1104,11 @@ article.sectionContent .meta {
   letter-spacing: -1px;
 }
 
+.siteFooter .socialWrapper {
+  font-family: monoidregular, monospace;
+}
 .siteFooter .bmoreLink em {
+  font-size: 110%;
   font-style: normal;
 }
 
@@ -1171,10 +1272,19 @@ article.sectionContent .meta {
 .socialWrapper li {
   margin-bottom: 12px;
 }
-@media only screen and (min-width: 330px) {
+@media only screen and (min-width: 450px) and (max-width: 599px) {
+  .socialWrapper li {
+    margin-bottom: 0;
+  }
+}
+@media only screen and (min-width: 450px) {
   .socialWrapper li {
     display: inline-block;
-    min-width: 100px;
+    margin-right: 12px;
+    min-width: 175px;
+  }
+  .socialWrapper li:last-of-type {
+    margin-right: 0;
   }
 }
 

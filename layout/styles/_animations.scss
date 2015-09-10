@@ -10,7 +10,7 @@
 	@include transition (all 0.2s ease);
 }
 
-.icon, .icon path {
+.icon, .icon path, .bmoreLink em {
 	@include transition (all 0.4s ease-in-out);
 }
 

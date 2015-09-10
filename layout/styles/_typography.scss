@@ -19,6 +19,9 @@ h1, h2, h3, h4, h5, h6 {
 		font-family:$font-mono;
 		@include scut-rem-fallback(20);
 		text-transform: uppercase;
+		@media only screen and (min-width:380px) {
+			@include scut-rem-fallback(24);
+		}
 	}
 }
 
@@ -83,8 +86,12 @@ article.sectionContent {
 }
 
 .siteFooter {
+	.socialWrapper {
+		font-family:$font-mono;
+	}
 	.bmoreLink {
 		em {
+			font-size:110%;
 			font-style: normal;
 		}
 	}

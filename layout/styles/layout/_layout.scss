@@ -15,11 +15,17 @@
 
 .masthead {
 	margin:0 0 75px;
-	position:relative;	
+	position:relative;
+	@media only screen and (min-width:730px) {
+		margin-bottom:20px;
+	}
 }
 
 .siteHeader {
 	padding:72px 36px 36px;
+	@media only screen and (min-width:460px) {
+		padding-bottom:60px;
+	}
 }
 
 .siteFooter {
@@ -33,7 +39,10 @@
 	}
 
 	.bmoreLink {
-		margin:24px 0;
+		margin:48px 0;
+		em {
+			padding:0 3px;			
+		}
 	}
 	.legal {
 		margin-bottom:0;
@@ -43,14 +52,19 @@
 		flex-wrap:wrap;
 		.donateCTA, .socialWrapper {
 			@include flex(0 1 auto);
-			margin-top:28px;
 			width:45%;
+		}
+		.donateCTA {
+			margin-top:14px;
 		}
 		.socialWrapper {
 			margin-left:18px;
 		}
 		p {
 			width:100%;
+		}
+		.legal {
+			text-align:center;
 		}
 	}
 }
