@@ -193,7 +193,7 @@
               for(i = 0; i < posts.length; i++) {
                 var tags = tumblr_api_read['posts'][i]['tags'];
                 if(tags.indexOf("news") != -1) {
-                  newsPost = tumblr_api_read['posts'][i]['regular-body'].replace(/<\/p>/,"<\/div>").replace(/<p>/, "<div class=\"articleContent\">");
+                  newsPost = tumblr_api_read['posts'][i]['regular-body'];
                   newsTitle = tumblr_api_read['posts'][i]['regular-title'];
                   break;
                 }
@@ -206,7 +206,7 @@
               <span>by</span> 
               Author Name
             </p>
-            <p><script>document.write(newsPost)</script><span class="metaContinueReading">&hellip; <a href="#">read more</a></span></p>
+            <div class="articleContent"><script>document.write(newsPost)</script><span class="metaContinueReading">&hellip; <a href="#">read more</a></span></div>
           </article>
         </section>
         <section class='blog fullView'>
@@ -221,7 +221,7 @@
               <span>by</span> 
               Author Name
             </p>
-            <p><script>document.write(tumblr_api_read['posts'][0]['regular-body'].replace(/<\/p>/,"<\/div>").replace(/<p>/, "<div class=\"articleContent\">"));</script><span class="metaContinueReading">&hellip; <a href="#">read more</a></span></p>
+            <div class="articleContent"><script>document.write(tumblr_api_read['posts'][0]['regular-body']);</script><span class="metaContinueReading">&hellip; <a href="#">read more</a></span></p>
           </article>
         </section>
         <section class='blog fullView'>
@@ -235,7 +235,7 @@
             <p class='meta'>
               interviewed <span>by</span> Author Name
             </p>
-            <p><script>document.write(tumblr_api_read['posts'][1]['regular-body'].replace(/<\/p>/,"<\/div>").replace(/<p>/, "<div class=\"articleContent\">"));</script><span class="metaContinueReading">&hellip; <a href="#">read more</a></span></p>
+            <div class="articleContent"><script>document.write(tumblr_api_read['posts'][1]['regular-body']);</script><span class="metaContinueReading">&hellip; <a href="#">read more</a></span></p>
           </article>
         </section>
         <section class='careers minView'>
@@ -244,7 +244,7 @@
           </h3>
           <div class='sectionContent'>
             <div class='jobTweets'>
-              <p>Loading...</p>
+              <p>Loading&hellip;</p>
             </div>
             <script src="js/jquery-1.11.1.min.js"></script>
             <script src="js/tweets.js"></script>
