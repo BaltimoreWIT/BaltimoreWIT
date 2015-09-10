@@ -10,6 +10,10 @@
 	@include transition (all 0.2s ease);
 }
 
+.icon, .icon path {
+	@include transition (all 0.4s ease-in-out);
+}
+
 .homepage {
 	.eventItem {
 		.dateWrapper, .eventTitle span {

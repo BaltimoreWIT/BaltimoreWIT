@@ -140,14 +140,27 @@ $sections: (
 	a {
 		color:lighten($color-cream,20%);
 		&:hover, &:focus {
-			color:lighten($color-fiery,12%);
+			color:white;
+			.icon {
+				background:white;
+				path {
+					fill:$color-fiery;
+					stroke:$color-fiery;
+				}
+			}
+		}
+	}
+	.icon {
+		path {
+			fill:lighten($color-cream,20%);
+			stroke:lighten($color-cream,20%);
 		}
 	}
 	.bmoreLink {
 		a {
 			&:hover, &:focus {
 				em {
-					color:darken($color-fiery,12%);
+					color:$color-fiery;
 				}
 			}
 		}	

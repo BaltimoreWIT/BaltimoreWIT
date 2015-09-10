@@ -3,3 +3,29 @@
 	margin-left:0;
 	padding-left:0;
 }
+
+.socialWrapper {
+	li {
+		margin-bottom: 12px;
+		@media only screen and (min-width:330px) {
+			display:inline-block;
+			min-width:100px;
+		}
+	}
+}
+
+.legal {
+	li {
+		white-space: nowrap;
+		&:after {
+			border-right-style:solid;
+			border-right-width:1px;
+			content:'';
+			display:inline;
+			padding:0 5px;
+		}
+		&:last-of-type:after {
+			display:none;
+		}
+	}
+}

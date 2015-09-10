@@ -1,34 +1,17 @@
 .icon {
-	font-family: 'icofont';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-
-	// Better Font Rendering
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-.icon {
+	border-radius:3px;
 	display:inline-block;
-	text-align:center;
-	@include size(22px);
+	line-height: 1;
+	padding:3px;
+	speak: none;
+	text-transform: none;
+	@include size(42px);
 }
 
-.iconWrapper {
-	.icon {
-		display:none;
-		.fontface.generatedcontent & {
-			display: inline-block;
-		} 
-	}
-	// Hide fallback text
-	.fontface.generatedcontent & .iconFBText {
-		display:block;
-		@include hide-text;
-		@include size(1px);
-	}
+.logoFB {
+
+}
+
+.logoTwitter {
+
 }

@@ -23,21 +23,17 @@
 }
 
 .siteFooter {
-	padding-top:36px;
+	padding-top:54px;
+	padding-bottom:9px;
 	.donateCTA {
 		display:block;
-		margin:18px auto 36px;
+		margin:0 auto 36px;
 		max-width:400px;
 		width:100%;
 	}
-	.socialWrapper {
-		margin-bottom:24px;
-		li {
-			@media only screen and (min-width:330px) {
-				display:inline-block;
-				min-width:100px;
-			}
-		}
+
+	.bmoreLink {
+		margin:24px 0;
 	}
 	.legal {
 		margin-bottom:0;

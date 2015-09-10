@@ -299,22 +299,17 @@ textarea {
 }
 
 .siteFooter {
-  padding-top: 36px;
+  padding-top: 54px;
+  padding-bottom: 9px;
 }
 .siteFooter .donateCTA {
   display: block;
-  margin: 18px auto 36px;
+  margin: 0 auto 36px;
   max-width: 400px;
   width: 100%;
 }
-.siteFooter .socialWrapper {
-  margin-bottom: 24px;
-}
-@media only screen and (min-width: 330px) {
-  .siteFooter .socialWrapper li {
-    display: inline-block;
-    min-width: 100px;
-  }
+.siteFooter .bmoreLink {
+  margin: 24px 0;
 }
 .siteFooter .legal {
   margin-bottom: 0;
@@ -683,6 +678,12 @@ textarea {
   transition: all 0.2s ease;
 }
 
+.icon, .icon path {
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
 .homepage .eventItem .dateWrapper, .homepage .eventItem .eventTitle span {
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
@@ -878,10 +879,21 @@ body {
   color: #ebe3c9;
 }
 .siteFooter a:hover, .siteFooter a:focus {
-  color: #f94e69;
+  color: white;
+}
+.siteFooter a:hover .icon, .siteFooter a:focus .icon {
+  background: white;
+}
+.siteFooter a:hover .icon path, .siteFooter a:focus .icon path {
+  fill: #f71337;
+  stroke: #f71337;
+}
+.siteFooter .icon path {
+  fill: #ebe3c9;
+  stroke: #ebe3c9;
 }
 .siteFooter .bmoreLink a:hover em, .siteFooter .bmoreLink a:focus em {
-  color: #c60725;
+  color: #f71337;
 }
 
 /*
@@ -1036,7 +1048,7 @@ article.sectionContent .meta {
   margin-left: 0;
 }
 .btnWrapper .btn:last-child {
-  margin-right: 0;
+  margin: 0;
 }
 
 .btnPrimary {
@@ -1140,43 +1152,44 @@ article.sectionContent .meta {
 }
 
 .icon {
-  font-family: 'icofont';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
+  border-radius: 3px;
+  display: inline-block;
   line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.icon {
-  display: inline-block;
-  text-align: center;
-  height: 22px;
-  width: 22px;
-}
-
-.iconWrapper .icon {
-  display: none;
-}
-.fontface.generatedcontent .iconWrapper .icon {
-  display: inline-block;
-}
-.fontface.generatedcontent .iconWrapper .iconFBText {
-  display: block;
-  overflow: hidden;
-  text-indent: 101%;
-  white-space: nowrap;
-  height: 1px;
-  width: 1px;
+  padding: 3px;
+  speak: none;
+  text-transform: none;
+  height: 42px;
+  width: 42px;
 }
 
 .noList, .noList li {
   list-style: none;
   margin-left: 0;
   padding-left: 0;
+}
+
+.socialWrapper li {
+  margin-bottom: 12px;
+}
+@media only screen and (min-width: 330px) {
+  .socialWrapper li {
+    display: inline-block;
+    min-width: 100px;
+  }
+}
+
+.legal li {
+  white-space: nowrap;
+}
+.legal li:after {
+  border-right-style: solid;
+  border-right-width: 1px;
+  content: '';
+  display: inline;
+  padding: 0 5px;
+}
+.legal li:last-of-type:after {
+  display: none;
 }
 
 .navMenu {
@@ -1262,5 +1275,11 @@ article.sectionContent .meta {
     position: absolute;
     top: 24px;
     left: 0;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .homepage main {
+    min-height: 1000px;
   }
 }
