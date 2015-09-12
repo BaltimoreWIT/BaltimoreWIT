@@ -1,8 +1,5 @@
 @import '../libs/scrollbars';
 
-.siteNavWrapper {
-}
-
 .navMenu {
 	display:block;
 	padding:8px;
@@ -12,14 +9,14 @@
 	&.nav-up {
 		top: -40px;
 	}
-	@media only screen and (min-width:800px) {
+	@media only screen and (min-width:730px) {
 		display:none;
 	}
 }
 
 .siteNav {
 	display:none;
-	@media only screen and (max-width:799px) {
+	@media only screen and (max-width:729px) {
 		@include scrollbars(1px, $color-charcoal);
 		overflow-y:scroll;
 		padding:36px 0 18px;
@@ -47,13 +44,18 @@
 			border-top-width: 1px;
 		}		
 	}
-	@media only screen and (min-width:800px) {
+	@media only screen and (min-width:730px) {
 		display:block;
 		.homepage & {
-			float:right;
 			li {
 				display:inline-block;
+				margin-left:-9px;
 				position:relative;
+				min-width:120px;
+				a {
+					display:block;
+					padding:0 9px;
+				}
 				&:hover, &:focus {
 					> .submenu {
 						display:block;
@@ -64,10 +66,19 @@
 		.homepage & .submenu {
 			display:none;
 			margin:0;
-			padding:0 6px;
+			padding:0 9px 9px;
 			position:absolute;
-			top:24px;
+			top:40px;
 			left:0;
+			width:100%;
+			li {
+				margin-left:0;
+				padding:12px 0;
+				min-width:100%;
+			}
+			a {
+				padding:0;
+			}
 		}
 	}
 }

@@ -14,6 +14,12 @@
 		background-position:top center;
 		background-repeat:no-repeat;
 		background-size:275%;
+		@media only screen and (min-width:500px) {
+			background-size:200%;
+		}
+		@media only screen and (min-width:700px) {
+			background-size:cover;
+		}
 	}
 	&:after {
 		@include linear-gradient(130deg, $color-sunburst, $color-melon, $color-sunburst, $color-cream, $color-melon);

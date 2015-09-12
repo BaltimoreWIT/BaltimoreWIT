@@ -2,8 +2,6 @@
 
 .homepage {
 	.fullView {
-		border-style:solid;
-		border-top-width:9px;
 		.sectionHeading, .sectionContent {
 			padding:12px;
 		}
@@ -25,7 +23,7 @@
 			.sectionHeading { width:20%; }
 			.sectionContent { width:80%; }		
 		}
-		@media only screen and (min-width:580px) and (max-width:799px) {
+		@media only screen and (min-width:580px) and (max-width:767px) {
 			.sectionHeading { width:15%; }
 			.sectionContent { width:85%; }		
 		}
@@ -36,8 +34,11 @@
 			width:100%;
 		}
 	}
-	@media only screen and (max-width:799px) {
+	@media only screen and (max-width:767px) {
+
 		.fullView {
+			border-style:solid;
+			border-top-width:9px;
 			@include display(flex);
 			padding:0;
 			.sectionHeading, .sectionContent {
@@ -60,16 +61,22 @@
 			display:none;
 		}
 	}	
-	@media only screen and (min-width:800px) {
+	@media only screen and (min-width:768px) {
+		.masthead {
+			margin-bottom:0;
+		}
 		main {
+			@include align-items(baseline);
 			@include display(flex);
 			@include flex-wrap(wrap);
 			position:relative;
-			padding-right:275px;
+			padding-top:24px;
+			padding-right:325px;
 			.news, .blog, .careers, .community {
 				@include flex(0 1 auto);
-				padding:0;
-				width:100%;
+				margin:0 auto 18px;
+				padding:0 0 2px;
+				width:90%;
 				.sectionHeading {
 					font-size:85%;
 					padding:3px 6px;
@@ -79,25 +86,34 @@
 					}
 				}
 				.sectionContent {
-					padding:0 24px 6px;
+					padding:16px;
 				}
 			}
 			.events {
 				position:absolute;
-				top:-48px;
+				top:-96px;
 				right:0;
-				width:250px;
+				width:325px;
+				.sectionHeading {
+					text-align:center;
+				}
 			}
 		}
 	}
 	@media only screen and (min-width:1024px) {
 		main {
-			padding-right:325px;
+			padding:50px 325px 50px 25px;
 			.news, .blog, .careers, .community {
-				width:48%;
+				margin-right:25px;
+				width:46%;
 			}
+		}
+	}
+	@media only screen and (min-width:1280px) {
+		main {
+			padding-right:360px;
 			.events {
-				width:300px;
+				right:30px;
 			}
 		}
 	}

@@ -10,7 +10,9 @@
 	margin-left:auto;
 	position:relative;
 	width:100%;
-	max-width:1200px;
+	@media only screen and (min-width:1280px) {
+		max-width:1200px;
+	}
 }
 
 .masthead {
@@ -43,6 +45,9 @@
 		em {
 			padding:0 3px;			
 		}
+		@media only screen and (max-width:919px) {
+			text-align:center;
+		}
 	}
 	.legal {
 		margin-bottom:0;
@@ -65,6 +70,21 @@
 		}
 		.legal {
 			text-align:center;
+		}
+	}
+	@media only screen and (min-width:920px) {
+		.bmoreLink, .legal {
+			display:inline-block;
+			margin:48px 0 0;
+			vertical-align: bottom;
+			width:50%;
+		}
+		.bmoreLink {
+			padding-left:24px;
+		}
+		.legal {
+			padding-right:24px;
+			text-align:right;
 		}
 	}
 }
