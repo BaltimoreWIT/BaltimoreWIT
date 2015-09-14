@@ -1,32 +1,5 @@
 .homepage .siteHeader {
-	.siteLogo {
-		background:url(../images/bwit_logotext_dk.png) no-repeat;
-		background-position:top center;
-		background-size:contain;
-		@include size(auto 60px);
-		@media only screen and (min-width:400px) {
-			height:75px;
-		}
-		@media only screen and (min-width:500px) {
-			margin:24px auto 48px;
-			text-align:center;
-		}
-	}
-	.siteLogoSecondary {
-		background:url(../images/bwit_flower.png) no-repeat;
-		background-position:center;
-		background-size:contain;
-		position:absolute;
-		right:0;
-		bottom:-70px;
-		left:0;
-		@include size(100% 130px);
-	}
-	.siteName {
-		@include hide-text;
-	}
 	.siteDesc {
-		margin:24px 0 0;
 		.headline {
 			min-height:180px;
 			span {
@@ -47,17 +20,6 @@
 			}
 		}
 	}
-	.btnWrapper {
-		margin:18px 0 36px;
-		@media only screen and (max-width:767px) {
-			text-align:center;
-		}
-		.btn {
-			@media only screen and (min-width:400px) {
-				min-width:150px;
-			}
-		}
-	}
 	@media only screen and (min-width:730px) {
 		.row {
 			@include display(flex);
@@ -69,19 +31,8 @@
 			@include flex(0 1 auto);
 			margin-top:0;
 		}
-		.siteLogo {
-			background-image:url(../images/bwit_v_li.png);
-			margin-bottom:0;
-			@include size(35% auto);
-			h1 {
-				font-size:150%;
-			}
-		}
 		.siteDesc {
 			width:55%;
-		}
-		.siteLogoSecondary {
-			display:none;
 		}
 	}
 	@media only screen and (min-width:730px) and (max-width:767px) {

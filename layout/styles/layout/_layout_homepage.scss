@@ -1,6 +1,11 @@
 @import '../modules/hero';
 
 .homepage {
+	.masthead {
+		@media only screen and (max-width:729px) {
+			margin-bottom:75px;
+		}		
+	}
 	.fullView {
 		.sectionHeading, .sectionContent {
 			padding:12px;
@@ -35,7 +40,6 @@
 		}
 	}
 	@media only screen and (max-width:767px) {
-
 		.fullView {
 			border-style:solid;
 			border-top-width:9px;

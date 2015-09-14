@@ -16,15 +16,23 @@
 }
 
 .masthead {
-	margin:0 0 75px;
+	margin:0 0 20px;
 	position:relative;
-	@media only screen and (min-width:730px) {
-		margin-bottom:20px;
-	}
 }
 
 .siteHeader {
 	padding:72px 36px 36px;
+	.btnWrapper {
+		margin:18px 0 36px;
+		@media only screen and (max-width:767px) {
+			text-align:center;
+		}
+		.btn {
+			@media only screen and (min-width:400px) {
+				min-width:150px;
+			}
+		}
+	}
 	@media only screen and (min-width:460px) {
 		padding-bottom:60px;
 	}

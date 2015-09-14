@@ -47,6 +47,7 @@
 	@media only screen and (min-width:730px) {
 		display:block;
 		.homepage & {
+			height:40px;
 			li {
 				display:inline-block;
 				margin-left:-9px;
@@ -68,7 +69,7 @@
 			margin:0;
 			padding:0 9px 9px;
 			position:absolute;
-			top:40px;
+			top:39px;
 			left:0;
 			width:100%;
 			li {
@@ -80,5 +81,8 @@
 				padding:0;
 			}
 		}
+	}
+	@media only screen and (min-width:1280px) {
+		padding-right:36px;
 	}
 }

@@ -231,6 +231,13 @@ textarea {
   display: block;
 }
 
+.imgWrapper img {
+  display: block;
+  height: auto;
+  width: auto;
+  max-width: 100%;
+}
+
 .inlineElement {
   display: inline !important;
 }
@@ -294,17 +301,25 @@ textarea {
 }
 
 .masthead {
-  margin: 0 0 75px;
+  margin: 0 0 20px;
   position: relative;
-}
-@media only screen and (min-width: 730px) {
-  .masthead {
-    margin-bottom: 20px;
-  }
 }
 
 .siteHeader {
   padding: 72px 36px 36px;
+}
+.siteHeader .btnWrapper {
+  margin: 18px 0 36px;
+}
+@media only screen and (max-width: 767px) {
+  .siteHeader .btnWrapper {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 400px) {
+  .siteHeader .btnWrapper .btn {
+    min-width: 150px;
+  }
 }
 @media only screen and (min-width: 460px) {
   .siteHeader {
@@ -386,43 +401,6 @@ textarea {
   }
 }
 
-.homepage .siteHeader .siteLogo {
-  background: url(../images/bwit_logotext_dk.png) no-repeat;
-  background-position: top center;
-  background-size: contain;
-  height: 60px;
-  width: auto;
-}
-@media only screen and (min-width: 400px) {
-  .homepage .siteHeader .siteLogo {
-    height: 75px;
-  }
-}
-@media only screen and (min-width: 500px) {
-  .homepage .siteHeader .siteLogo {
-    margin: 24px auto 48px;
-    text-align: center;
-  }
-}
-.homepage .siteHeader .siteLogoSecondary {
-  background: url(../images/bwit_flower.png) no-repeat;
-  background-position: center;
-  background-size: contain;
-  position: absolute;
-  right: 0;
-  bottom: -70px;
-  left: 0;
-  height: 130px;
-  width: 100%;
-}
-.homepage .siteHeader .siteName {
-  overflow: hidden;
-  text-indent: 101%;
-  white-space: nowrap;
-}
-.homepage .siteHeader .siteDesc {
-  margin: 24px 0 0;
-}
 .homepage .siteHeader .siteDesc .headline {
   min-height: 180px;
 }
@@ -448,19 +426,6 @@ textarea {
     max-width: 600px;
   }
 }
-.homepage .siteHeader .btnWrapper {
-  margin: 18px 0 36px;
-}
-@media only screen and (max-width: 767px) {
-  .homepage .siteHeader .btnWrapper {
-    text-align: center;
-  }
-}
-@media only screen and (min-width: 400px) {
-  .homepage .siteHeader .btnWrapper .btn {
-    min-width: 150px;
-  }
-}
 @media only screen and (min-width: 730px) {
   .homepage .siteHeader .row {
     display: -webkit-box;
@@ -484,20 +449,8 @@ textarea {
     flex: 0 1 auto;
     margin-top: 0;
   }
-  .homepage .siteHeader .siteLogo {
-    background-image: url(../images/bwit_v_li.png);
-    margin-bottom: 0;
-    height: auto;
-    width: 35%;
-  }
-  .homepage .siteHeader .siteLogo h1 {
-    font-size: 150%;
-  }
   .homepage .siteHeader .siteDesc {
     width: 55%;
-  }
-  .homepage .siteHeader .siteLogoSecondary {
-    display: none;
   }
 }
 @media only screen and (min-width: 730px) and (max-width: 767px) {
@@ -520,6 +473,11 @@ textarea {
   }
 }
 
+@media only screen and (max-width: 729px) {
+  .homepage .masthead {
+    margin-bottom: 75px;
+  }
+}
 .homepage .fullView .sectionHeading, .homepage .fullView .sectionContent {
   padding: 12px;
 }
@@ -871,16 +829,16 @@ textarea {
   background-image: url("../images/headerimg1.jpg");
   background-position: top center;
   background-repeat: no-repeat;
-  background-size: 275%;
+  background-size: cover;
 }
-@media only screen and (min-width: 500px) {
-  .masthead:before {
-    background-size: 200%;
+@media only screen and (max-width: 499px) {
+  .homepage .masthead:before {
+    background-size: 275%;
   }
 }
-@media only screen and (min-width: 700px) {
-  .masthead:before {
-    background-size: cover;
+@media only screen and (min-width: 500px) and (max-width: 699px) {
+  .homepage .masthead:before {
+    background-size: 200%;
   }
 }
 .masthead:after {
@@ -1322,14 +1280,15 @@ article.sectionContent .meta {
   }
 }
 
-.homepage article .metaContinueReading {
-  font-size: 90%;
-}
 @media only screen and (min-width: 1024px) {
-  .homepage article .meta, .homepage article .articleContent, .homepage article .sectionContent {
+  .meta, .articleContent, .sectionContent {
     font-size: 18px;
     font-size: 1.125rem;
   }
+}
+
+.homepage article .metaContinueReading {
+  font-size: 90%;
 }
 
 .meta span, .eventMeta span {
@@ -1346,6 +1305,31 @@ article.sectionContent .meta {
   font-style: normal;
 }
 
+article.sectionContent .meta {
+  line-height: 1;
+  margin-bottom: 15px;
+}
+
+.articleHeadline {
+  font-family: ponsi_rounded_slabregular, serif;
+  font-weight: bold;
+  font-size: 22px;
+  font-size: 1.375rem;
+}
+@media only screen and (min-width: 1024px) {
+  .articleHeadline {
+    font-size: 28px;
+    font-size: 1.75rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .meta, .articleContent, .sectionContent {
+    font-size: 18px;
+    font-size: 1.125rem;
+  }
+}
+
 .articleContent {
   word-wrap: break-word;
 }
@@ -1353,6 +1337,12 @@ article.sectionContent .meta {
   font-family: eratolight, serif;
   font-size: 18px;
   font-size: 1.125rem;
+}
+.articleContent p, .articleContent ul, .articleContent dl {
+  margin-bottom: 12px;
+}
+.articleContent .imgWrapper {
+  margin: 18px 0;
 }
 .articleContent sup, .articleContent sub {
   font-size: 65%;
@@ -1509,6 +1499,56 @@ article.sectionContent .meta {
   width: 42px;
 }
 
+.siteHeader .siteLogo {
+  background: url(../images/bwit_logotext_dk.png) no-repeat;
+  background-position: top center;
+  background-size: contain;
+  margin-bottom: 24px;
+  height: 60px;
+  width: auto;
+}
+@media only screen and (min-width: 400px) {
+  .siteHeader .siteLogo {
+    height: 75px;
+  }
+}
+@media only screen and (min-width: 500px) {
+  .siteHeader .siteLogo {
+    margin: 24px auto 48px;
+    text-align: center;
+  }
+}
+.homepage .siteHeader .siteLogoSecondary {
+  background: url(../images/bwit_flower.png) no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  right: 0;
+  bottom: -70px;
+  left: 0;
+  height: 130px;
+  width: 100%;
+}
+.siteHeader .siteName {
+  overflow: hidden;
+  text-indent: 101%;
+  white-space: nowrap;
+}
+@media only screen and (min-width: 730px) {
+  .siteHeader .siteLogo {
+    background-image: url(../images/bwit_v_li.png);
+    margin-bottom: 0;
+    height: auto;
+    width: 35%;
+  }
+  .siteHeader .siteLogo h1 {
+    font-size: 150%;
+  }
+  .homepage .siteHeader .siteLogoSecondary {
+    display: none;
+  }
+}
+
 .noList, .noList li {
   list-style: none;
   margin-left: 0;
@@ -1624,6 +1664,9 @@ article.sectionContent .meta {
   .siteNav {
     display: block;
   }
+  .homepage .siteNav {
+    height: 40px;
+  }
   .homepage .siteNav li {
     display: inline-block;
     margin-left: -9px;
@@ -1642,7 +1685,7 @@ article.sectionContent .meta {
     margin: 0;
     padding: 0 9px 9px;
     position: absolute;
-    top: 40px;
+    top: 39px;
     left: 0;
     width: 100%;
   }
@@ -1653,5 +1696,10 @@ article.sectionContent .meta {
   }
   .homepage .siteNav .submenu a {
     padding: 0;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .siteNav {
+    padding-right: 36px;
   }
 }

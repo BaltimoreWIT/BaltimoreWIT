@@ -91,14 +91,15 @@ article.sectionContent {
 	}
 }
 
-.homepage article {
-	.metaContinueReading {
-		font-size:90%;
-	}
+.meta, .articleContent, .sectionContent {
 	@media only screen and (min-width:1024px) {
-		.meta, .articleContent, .sectionContent {
-			@include scut-rem-fallback(18);
-		}
+		@include scut-rem-fallback(18);
+	}
+}
+
+.homepage { 
+	article .metaContinueReading {
+		font-size:90%;
 	}
 }
 

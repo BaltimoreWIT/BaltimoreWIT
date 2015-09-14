@@ -1,8 +1,23 @@
-// LAYOUT
-article {
+article.sectionContent {
+	.meta {
+		line-height:1;
+		margin-bottom:15px;
+	}
 }
 
-.articleHeader {
+.articleHeadline {
+	font-family:$font-heading;
+	font-weight: bold;
+	@include scut-rem-fallback(22);
+	@media only screen and (min-width:1024px) {
+		@include scut-rem-fallback(28);
+	}
+}
+
+.meta, .articleContent, .sectionContent {
+	@media only screen and (min-width:1024px) {
+		@include scut-rem-fallback(18);
+	}
 }
 
 .articleContent {
@@ -18,7 +33,9 @@ article {
 	h5 {}
 	h6 {}
 
-	p {}
+	p, ul, dl {
+		margin-bottom:12px;
+	}
 	ul {
 		li {}
 	}
@@ -28,6 +45,9 @@ article {
 	dl {
 		dt {
 		}
+	}
+	.imgWrapper {
+		margin:18px 0;
 	}
 	img {}
 	iframe {}
