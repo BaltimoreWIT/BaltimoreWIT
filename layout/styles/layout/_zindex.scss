@@ -9,7 +9,7 @@
 	z-index:-1;
 }
 
-.masthead {
+.masthead, .interior {
 	&:before, &:after {
 		z-index:-2;
 	}

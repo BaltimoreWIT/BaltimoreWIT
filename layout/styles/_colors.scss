@@ -34,14 +34,24 @@ body {
 		background:$color-offblack;
 	}
 	@media only screen and (min-width:730px) {
-		background:rgba($color-offblack,0.35);
-		li {
-			&:hover, &:focus {
-				a {
-					background:$color-offblack;
+		.homepage & {
+			background:rgba($color-offblack,0.35);
+			li {
+				&:hover, &:focus {
+					a {
+						background:$color-offblack;
+					}
+					> .submenu {
+						background:$color-offblack;
+					}
 				}
-				> .submenu {
-					background:$color-offblack;
+			}		
+		}
+		.interior & {
+			background:$color-charcoal;
+			li a {
+				&:hover, &:focus {
+						background:$color-offblack;
 				}
 			}
 		}
@@ -54,10 +64,25 @@ body {
 	}
 }
 
-.homepage main {
-	@media only screen and (min-width:1280px) {
-		background:$color-offwhite;
-	}	
+.homepage {
+	main {
+		@media only screen and (min-width:1280px) {
+			background:$color-offwhite;
+		}	
+	}
+	.sectionHeading {
+		a {
+			color:white;
+		}
+	}
+	article {
+		.metaContinueReading a {
+			color:$color-fiery;
+			&:hover, &:focus {
+				color:darken($color-fiery,8%);
+			}
+		}
+	}
 }
 
 .homepage .events {
@@ -91,22 +116,6 @@ body {
 	}
 	@media only screen and (min-width:768px) {
 		background:white;
-	}
-}
-
-.homepage {
-	.sectionHeading {
-		a {
-			color:white;
-		}
-	}
-	article {
-		.metaContinueReading a {
-			color:$color-fiery;
-			&:hover, &:focus {
-				color:darken($color-fiery,8%);
-			}
-		}
 	}
 }
 
@@ -167,8 +176,44 @@ $sections: (
 	@include theme($section, $color);
 }
 
+.interior {
+	article {
+		background:white;
+	}
+}
+
 .articleHeadline a {
 	color:$color-charcoal;
+}
+
+.articleFooter {
+	background:$color-sunburst;
+	.shareWrapper {
+		border-bottom-color:white;
+		color:white;
+		.icon {
+			background-position:0 100%;
+			background-size:100% 200%;
+			&.logo-twitter {
+				@include linear-gradient(to bottom, #55acee, #55acee 50%, $color-sunburst 50%, $color-sunburst);
+			}
+			&.logo-fb {
+				@include linear-gradient(to bottom, #3b5998, #3b5998 50%, $color-sunburst 50%, $color-sunburst);
+			}
+			&:hover, &:focus {
+				background-position:0 0;
+			}			
+		}
+	
+		// .icon {
+		// 	&:hover, &:focus {
+		// 		path {
+		// 			fill:$color-fiery;
+		// 			stroke:$color-fiery;
+		// 		}
+		// 	}
+		// }
+	}
 }
 
 .siteFooter {

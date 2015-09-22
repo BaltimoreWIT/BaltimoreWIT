@@ -46,6 +46,12 @@
 	}
 	@media only screen and (min-width:730px) {
 		display:block;
+		li {
+			a {
+				display:block;
+				padding:0 9px;
+			}		
+		}
 		.homepage & {
 			height:40px;
 			li {
@@ -53,36 +59,44 @@
 				margin-left:-9px;
 				position:relative;
 				min-width:120px;
-				a {
-					display:block;
-					padding:0 9px;
-				}
 				&:hover, &:focus {
 					> .submenu {
 						display:block;
 					}
 				}
 			}
-		}
-		.homepage & .submenu {
-			display:none;
-			margin:0;
-			padding:0 9px 9px;
-			position:absolute;
-			top:39px;
-			left:0;
-			width:100%;
-			li {
-				margin-left:0;
-				padding:12px 0;
-				min-width:100%;
+			.submenu {
+				display:none;
+				margin:0;
+				padding:0 9px 9px;
+				position:absolute;
+				top:39px;
+				left:0;
+				width:100%;
+				li {
+					margin-left:0;
+					padding:12px 0;
+					min-width:100%;
+				}
+				a {
+					padding:0;
+				}
 			}
-			a {
-				padding:0;
+		}
+		.interior & {
+			margin:0 12px;
+			padding:18px 0 36px;
+			li a {
+				padding-left:18px;
+			}
+			.submenu li a {
+				padding-left:30px;
 			}
 		}
 	}
 	@media only screen and (min-width:1280px) {
-		padding-right:36px;
+		.homepage & {
+			padding-right:36px;
+		}
 	}
 }

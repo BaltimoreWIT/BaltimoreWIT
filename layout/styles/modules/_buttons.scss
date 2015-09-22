@@ -6,6 +6,7 @@
 	font-family:$font-mono;
 	@include scut-rem-fallback(16);
 	font-weight:bold;
+	letter-spacing:1px;
 	padding:16px;
 	text-align:center;
 	text-transform:uppercase;
@@ -18,7 +19,13 @@
 			margin:0;
 		}
 	}
-	.homepage .masthead .btnWrapper & {
+	.masthead .btnWrapper & {
+		@media only screen and (max-width:299px) {
+			display:block;
+			margin-bottom:12px;
+			width:100%;
+		}
+
 		@media only screen and (min-width:1024px) {
 			@include scut-rem-fallback(20);
 		}

@@ -23,7 +23,6 @@
 .siteHeader {
 	padding:72px 36px 36px;
 	.btnWrapper {
-		margin:18px 0 36px;
 		@media only screen and (max-width:767px) {
 			text-align:center;
 		}
@@ -43,6 +42,7 @@
 	padding-bottom:9px;
 	.donateCTA {
 		display:block;
+		letter-spacing: 3px;
 		margin:0 auto 36px;
 		max-width:400px;
 		width:100%;
@@ -96,11 +96,5 @@
 		}
 	}
 }
-
-// HOMEPAGE
-@import 'layout_homepage';
-
-// INTERIOR
-@import 'layout_interior';
 
 @import 'zindex';

@@ -45,13 +45,18 @@ h1, h2, h3, h4, h5, h6 {
 	@media only screen and (min-width:730px) {
 		font-family:$font-mono;
 		letter-spacing: 2px;
-		text-align:right;
 		text-transform: uppercase;
-		a {
-			text-align:center;
+		.homepage & {
+			text-align:right;
+			a {
+				text-align:center;
+			}
+			.submenu a {
+				line-height: 1.2;
+			}
 		}
-		.submenu a {
-			line-height: 1.2;
+		.interior & {
+			text-align:left;
 		}
 	}
 }
@@ -75,31 +80,15 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 
-article.sectionContent {
-	.meta {
-		line-height:1;
-		margin-bottom:15px;
-	}
-}
-
-.articleHeadline {
-	font-family:$font-heading;
-	font-weight: bold;
-	@include scut-rem-fallback(22);
-	@media only screen and (min-width:1024px) {
-		@include scut-rem-fallback(28);
+.homepage { 
+	article .metaContinueReading {
+		font-size:90%;
 	}
 }
 
 .meta, .articleContent, .sectionContent {
 	@media only screen and (min-width:1024px) {
 		@include scut-rem-fallback(18);
-	}
-}
-
-.homepage { 
-	article .metaContinueReading {
-		font-size:90%;
 	}
 }
 

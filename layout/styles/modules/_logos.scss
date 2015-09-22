@@ -30,10 +30,16 @@
 		.siteLogo {
 			background-image:url(../images/bwit_v_li.png);
 			margin-bottom:0;
-			@include size(35% auto);
 			h1 {
 				font-size:150%;
 			}
+		}
+		.homepage & .siteLogo {
+			@include size(35% auto);			
+		}
+		.interior & .siteLogo {
+			min-height: 150px;
+			@include size(100% auto);			
 		}
 		.homepage & .siteLogoSecondary {
 			display:none;
