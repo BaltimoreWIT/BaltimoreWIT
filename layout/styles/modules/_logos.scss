@@ -1,0 +1,48 @@
+.siteHeader {
+	.siteLogo {
+		background:url(../images/bwit_logotext_dk.png) no-repeat;
+		background-position:top center;
+		background-size:contain;
+		margin-bottom:24px;
+		@include size(auto 60px);
+		@media only screen and (min-width:400px) {
+			height:75px;
+		}
+		@media only screen and (min-width:500px) {
+			margin:24px auto 48px;
+			text-align:center;
+		}
+	}
+	.homepage & .siteLogoSecondary {
+		background:url(../images/bwit_flower.png) no-repeat;
+		background-position:center;
+		background-size:contain;
+		position:absolute;
+		right:0;
+		bottom:-70px;
+		left:0;
+		@include size(100% 130px);
+	}
+	.siteName {
+		@include hide-text;
+	}
+	@media only screen and (min-width:730px) {
+		.siteLogo {
+			background-image:url(../images/bwit_v_li.png);
+			margin-bottom:0;
+			h1 {
+				font-size:150%;
+			}
+		}
+		.homepage & .siteLogo {
+			@include size(35% auto);			
+		}
+		.interior & .siteLogo {
+			min-height: 150px;
+			@include size(100% auto);			
+		}
+		.homepage & .siteLogoSecondary {
+			display:none;
+		}
+	}
+}

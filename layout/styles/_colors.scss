@@ -2,6 +2,9 @@
 
 html {
 	background:$color-offwhite;
+	@media only screen and (min-width:1280px) {
+		background:$color-offblack;
+	}
 }
 
 body {
@@ -21,20 +24,64 @@ body {
 }
 
 .navMenu {
-	@media only screen and (max-width:799px) {
+	@media only screen and (max-width:729px) {
 		background:$color-offblack;
 	}
 }
 
 .siteNav {
-	@media only screen and (max-width:799px) {
+	@media only screen and (max-width:729px) {
 		background:$color-offblack;
+	}
+	@media only screen and (min-width:730px) {
+		.homepage & {
+			background:rgba($color-offblack,0.35);
+			li {
+				&:hover, &:focus {
+					a {
+						background:$color-offblack;
+					}
+					> .submenu {
+						background:$color-offblack;
+					}
+				}
+			}		
+		}
+		.interior & {
+			background:$color-charcoal;
+			li a {
+				&:hover, &:focus {
+						background:$color-offblack;
+				}
+			}
+		}
 	}
 	li {
 		border-bottom-color:$color-charcoal;
 	}
 	.submenu {
 		border-top-color:$color-charcoal;
+	}
+}
+
+.homepage {
+	main {
+		@media only screen and (min-width:1280px) {
+			background:$color-offwhite;
+		}	
+	}
+	.sectionHeading {
+		a {
+			color:white;
+		}
+	}
+	article {
+		.metaContinueReading a {
+			color:$color-fiery;
+			&:hover, &:focus {
+				color:darken($color-fiery,8%);
+			}
+		}
 	}
 }
 
@@ -67,26 +114,8 @@ body {
 			}
 		}		
 	}
-}
-
-.homepage {
-	.sectionHeading {
-		background-position:100% 0;
-		background-size:200% 100%;
-		a {
-			color:white;
-		}				
-		&:hover, &:focus {
-			background-position:0 0;
-		}
-	}
-	article {
-		.metaContinueReading a {
-			color:$color-fiery;
-			&:hover, &:focus {
-				color:darken($color-fiery,8%);
-			}
-		}
+	@media only screen and (min-width:768px) {
+		background:white;
 	}
 }
 
@@ -96,20 +125,41 @@ body {
 	$themeSecondary: darken($color, 3%);
 
 	.homepage .#{$name} {
-		border-top-color:$themePrimary;
-		&.fullView {
-			.sectionHeading {
-				@include linear-gradient(to right, $themePrimary, $themePrimary 50%, $color-charcoal 50%, $color-charcoal);
-			}
-			.articleHeadline a {
-				&:hover, &:focus {
-					color:$themeSecondary;
-				}
+		.sectionHeading {
+			background-position:100% 0;
+			background-size:200% 100%;
+			&:hover, &:focus {
+				background-position:0 0;
 			}
 		}
-		&.minView {
+		.articleHeadline a {
+			&:hover, &:focus {
+				color:$themeSecondary;
+			}
+		}
+		@media only screen and (max-width:767px) {
+			border-top-color:$themePrimary;
+			.sectionContent {
+				background-color:white;
+			}
+			&.fullView {
+				.sectionHeading {
+					@include linear-gradient(to right, $themePrimary, $themePrimary 50%, $color-charcoal 50%, $color-charcoal);
+				}
+			}
+			&.minView {
+				.sectionHeading {
+					@include linear-gradient(to right, $themeSecondary, $themeSecondary 50%, $themePrimary 50%, $themePrimary);
+				}
+			}			
+		}
+		@media only screen and (min-width:768px) {
+			background-color:$themePrimary;
 			.sectionHeading {
-				@include linear-gradient(to right, $themeSecondary, $themeSecondary 50%, $themePrimary 50%, $themePrimary);
+				@include linear-gradient(to right, rgba($color-offblack,0.1), rgba($color-offblack,0.2), transparent 50%, transparent);
+			}
+			.sectionContent {
+				background-color:white;
 			}
 		}
 	}
@@ -126,12 +176,44 @@ $sections: (
 	@include theme($section, $color);
 }
 
-.sectionContent {
-	background-color:white;
+.interior {
+	article {
+		background:white;
+	}
 }
 
 .articleHeadline a {
 	color:$color-charcoal;
+}
+
+.articleFooter {
+	background:$color-sunburst;
+	.shareWrapper {
+		border-bottom-color:white;
+		color:white;
+		.icon {
+			background-position:0 100%;
+			background-size:100% 200%;
+			&.logo-twitter {
+				@include linear-gradient(to bottom, #55acee, #55acee 50%, $color-sunburst 50%, $color-sunburst);
+			}
+			&.logo-fb {
+				@include linear-gradient(to bottom, #3b5998, #3b5998 50%, $color-sunburst 50%, $color-sunburst);
+			}
+			&:hover, &:focus {
+				background-position:0 0;
+			}			
+		}
+	
+		// .icon {
+		// 	&:hover, &:focus {
+		// 		path {
+		// 			fill:$color-fiery;
+		// 			stroke:$color-fiery;
+		// 		}
+		// 	}
+		// }
+	}
 }
 
 .siteFooter {

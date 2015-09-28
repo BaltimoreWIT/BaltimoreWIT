@@ -13,9 +13,45 @@
 		background-image:url("../images/headerimg1.jpg");
 		background-position:top center;
 		background-repeat:no-repeat;
-		background-size:275%;
+		background-size:cover;
+		.homepage & {
+			@media only screen and (max-width:499px) {
+				background-size:275%;
+			}
+			@media only screen and (min-width:500px) and (max-width:699px) {
+				background-size:200%;
+			}
+		}
 	}
 	&:after {
 		@include linear-gradient(130deg, $color-sunburst, $color-melon, $color-sunburst, $color-cream, $color-melon);
+	}
+}
+
+@media only screen and (min-width:730px) {
+	.interior {
+		&:before, &:after {
+			content:'';
+			opacity:0.6;
+			@include size(100%);
+			position:absolute;
+			top:0;
+			left:0;
+		}
+		&:before {
+			background-image:url("../images/headerimg2.jpg");
+			background-position:top center;
+			background-repeat:no-repeat;
+			background-size:cover;
+			height:325px;
+		}
+		&:after {
+			@include linear-gradient(90deg, $color-fiery, $color-melon, $color-sunburst, $color-melon);
+		}		
+		.masthead {
+			&:before, &:after {
+				display: none;
+			}
+		}
 	}
 }

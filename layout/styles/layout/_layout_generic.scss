@@ -36,6 +36,14 @@
 	display:block;
 }
 
+.imgWrapper {
+	img {
+		display:block;
+		@include size(auto);
+		max-width:100%;
+	}
+}
+
 .inlineElement {
 	display: inline !important;
 }

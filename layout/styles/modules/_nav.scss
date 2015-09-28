@@ -1,8 +1,5 @@
 @import '../libs/scrollbars';
 
-.siteNavWrapper {
-}
-
 .navMenu {
 	display:block;
 	padding:8px;
@@ -12,14 +9,14 @@
 	&.nav-up {
 		top: -40px;
 	}
-	@media only screen and (min-width:800px) {
+	@media only screen and (min-width:730px) {
 		display:none;
 	}
 }
 
 .siteNav {
 	display:none;
-	@media only screen and (max-width:799px) {
+	@media only screen and (max-width:729px) {
 		@include scrollbars(1px, $color-charcoal);
 		overflow-y:scroll;
 		padding:36px 0 18px;
@@ -47,27 +44,59 @@
 			border-top-width: 1px;
 		}		
 	}
-	@media only screen and (min-width:800px) {
+	@media only screen and (min-width:730px) {
 		display:block;
+		li {
+			a {
+				display:block;
+				padding:0 9px;
+			}		
+		}
 		.homepage & {
-			float:right;
+			height:40px;
 			li {
 				display:inline-block;
+				margin-left:-9px;
 				position:relative;
+				min-width:120px;
 				&:hover, &:focus {
 					> .submenu {
 						display:block;
 					}
 				}
 			}
+			.submenu {
+				display:none;
+				margin:0;
+				padding:0 9px 9px;
+				position:absolute;
+				top:39px;
+				left:0;
+				width:100%;
+				li {
+					margin-left:0;
+					padding:12px 0;
+					min-width:100%;
+				}
+				a {
+					padding:0;
+				}
+			}
 		}
-		.homepage & .submenu {
-			display:none;
-			margin:0;
-			padding:0 6px;
-			position:absolute;
-			top:24px;
-			left:0;
+		.interior & {
+			margin:0 12px;
+			padding:18px 0 36px;
+			li a {
+				padding-left:18px;
+			}
+			.submenu li a {
+				padding-left:30px;
+			}
+		}
+	}
+	@media only screen and (min-width:1280px) {
+		.homepage & {
+			padding-right:36px;
 		}
 	}
 }

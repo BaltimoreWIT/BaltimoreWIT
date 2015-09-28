@@ -1,32 +1,5 @@
 .homepage .siteHeader {
-	.siteLogo {
-		background:url(../images/bwit_logotext_dk.png) no-repeat;
-		background-position:top center;
-		background-size:contain;
-		@include size(auto 60px);
-		@media only screen and (min-width:400px) {
-			height:75px;
-		}
-		@media only screen and (min-width:500px) {
-			margin:24px auto 48px;
-			text-align:center;
-		}
-	}
-	.siteLogoSecondary {
-		background:url(../images/bwit_flower.png) no-repeat;
-		background-position:center;
-		background-size:contain;
-		position:absolute;
-		right:0;
-		bottom:-70px;
-		left:0;
-		@include size(100% 130px);
-	}
-	.siteName {
-		@include hide-text;
-	}
 	.siteDesc {
-		margin:24px 0 0;
 		.headline {
 			min-height:180px;
 			span {
@@ -36,7 +9,7 @@
 			@media only screen and (min-width:380px) {
 				min-height:190px;
 			}
-			@media only screen and (min-width:500px) {
+			@media only screen and (min-width:500px) and (max-width:1023px) {
 				min-height:165px;
 			}
 			@media only screen and (min-width:500px) and (max-width:729px) {
@@ -46,37 +19,37 @@
 				max-width:600px;				
 			}
 		}
-		.btnWrapper {
-			margin:18px 0 36px;
-			text-align:center;
-			.btn {
-				@media only screen and (min-width:400px) {
-					min-width:150px;
-				}
-
-			}
-		}
 	}
 	@media only screen and (min-width:730px) {
-		@include display(flex);
-		padding-bottom:48px;
+		.row {
+			@include display(flex);
+			padding-bottom:24px;
+			width:100%;
+		}
 		.siteLogo, .siteDesc {
 			display:inline-block;
 			@include flex(0 1 auto);
-		}
-		.siteLogo {
-			background-image:url(../images/bwit_v_li.png);
-			@include size(35% auto);
-			h1 {
-				font-size:150%;
-			}
+			margin-top:0;
 		}
 		.siteDesc {
-			margin-left: 48px;
-			width:65%;
+			width:55%;
 		}
-		.siteLogoSecondary {
-			display:none;
+	}
+	@media only screen and (min-width:730px) and (max-width:767px) {
+		.btnWrapper {
+			margin:0 0 0 45%;
+			width:55%;
+		}
+	}
+	@media only screen and (min-width:768px) {
+		padding-bottom:20px;
+	}
+	@media only screen and (min-width:800px) {
+		.siteLogo, .btnWrapper {
+			width:45%;
+		}
+		.btnWrapper {
+			text-align:center;
 		}
 	}
 }

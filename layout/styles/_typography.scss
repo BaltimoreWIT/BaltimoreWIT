@@ -22,6 +22,9 @@ h1, h2, h3, h4, h5, h6 {
 		@media only screen and (min-width:380px) {
 			@include scut-rem-fallback(24);
 		}
+		@media only screen and (min-width:1024px) {
+			@include scut-rem-fallback(30);
+		}
 	}
 }
 
@@ -39,6 +42,23 @@ h1, h2, h3, h4, h5, h6 {
 .siteNav {
 	line-height: 2.5;
 	text-align:center;
+	@media only screen and (min-width:730px) {
+		font-family:$font-mono;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		.homepage & {
+			text-align:right;
+			a {
+				text-align:center;
+			}
+			.submenu a {
+				line-height: 1.2;
+			}
+		}
+		.interior & {
+			text-align:left;
+		}
+	}
 }
 
 .sectionHeading {
@@ -46,7 +66,6 @@ h1, h2, h3, h4, h5, h6 {
 	@include scut-rem-fallback(20);
 	font-weight:bold;
 	letter-spacing:2px;
-	text-align:center;
 	text-transform:uppercase;
 	a {
 		text-decoration: none;
@@ -56,24 +75,20 @@ h1, h2, h3, h4, h5, h6 {
 		@include scut-rem-fallback(36);
 		text-transform:lowercase;
 	}
-}
-
-article.sectionContent {
-	.meta {
-		line-height:1;
-		margin-bottom:15px;
+	@media only screen and (max-width:767px) {
+		text-align:center;
 	}
 }
 
-.articleHeadline {
-	font-family:$font-heading;
-	font-weight: bold;
-	@include scut-rem-fallback(22);
+.homepage { 
+	article .metaContinueReading {
+		font-size:90%;
+	}
 }
 
-.homepage article {
-	.metaContinueReading {
-		font-size:90%;
+.meta, .articleContent, .sectionContent {
+	@media only screen and (min-width:1024px) {
+		@include scut-rem-fallback(18);
 	}
 }
 

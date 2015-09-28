@@ -10,19 +10,28 @@
 	margin-left:auto;
 	position:relative;
 	width:100%;
-	max-width:1200px;
+	@media only screen and (min-width:1280px) {
+		max-width:1200px;
+	}
 }
 
 .masthead {
-	margin:0 0 75px;
+	margin:0 0 20px;
 	position:relative;
-	@media only screen and (min-width:730px) {
-		margin-bottom:20px;
-	}
 }
 
 .siteHeader {
 	padding:72px 36px 36px;
+	.btnWrapper {
+		@media only screen and (max-width:767px) {
+			text-align:center;
+		}
+		.btn {
+			@media only screen and (min-width:400px) {
+				min-width:150px;
+			}
+		}
+	}
 	@media only screen and (min-width:460px) {
 		padding-bottom:60px;
 	}
@@ -33,6 +42,7 @@
 	padding-bottom:9px;
 	.donateCTA {
 		display:block;
+		letter-spacing: 3px;
 		margin:0 auto 36px;
 		max-width:400px;
 		width:100%;
@@ -42,6 +52,9 @@
 		margin:48px 0;
 		em {
 			padding:0 3px;			
+		}
+		@media only screen and (max-width:919px) {
+			text-align:center;
 		}
 	}
 	.legal {
@@ -67,12 +80,21 @@
 			text-align:center;
 		}
 	}
+	@media only screen and (min-width:920px) {
+		.bmoreLink, .legal {
+			display:inline-block;
+			margin:48px 0 0;
+			vertical-align: bottom;
+			width:50%;
+		}
+		.bmoreLink {
+			padding-left:24px;
+		}
+		.legal {
+			padding-right:24px;
+			text-align:right;
+		}
+	}
 }
-
-// HOMEPAGE
-@import 'layout_homepage';
-
-// INTERIOR
-@import 'layout_interior';
 
 @import 'zindex';
