@@ -1,0 +1,121 @@
+.ss-form-container {
+	max-width: 500px;
+}
+.ss-required-asterisk, .required-message, .error-message {
+	color:$color-fiery;
+}
+.ss-required-asterisk {
+	font-size:90%;
+}
+.required-message, .error-message {
+	display:none;
+}
+.required~.required-message, .error~.error-message {
+	display: block;
+}
+
+.docs-offscreen {
+	position: absolute;
+	left: -10000px;
+	top: -10000px;
+}
+
+.ss-form-title, .ss-section-title {
+	font-weight: bold;	
+}
+.ss-form-title {
+	font-family:$font-heading;
+	font-weight: bold;
+	@include scut-rem-fallback(22);
+	@media only screen and (min-width:1024px) {
+		@include scut-rem-fallback(28);
+	}	
+}
+.ss-section-title {
+	border-bottom:1px solid $color-charcoal;
+	color:$color-charcoal;
+	@include scut-rem-fallback(18);
+}
+.ss-form {
+	margin:24px 0;
+}
+.ss-q-item-label {
+	display:block;
+	margin-bottom:4px;
+}
+.ss-form-entry {
+	margin-bottom:16px;
+	.ss-section-header & {
+		margin-top:24px;
+		margin-bottom:10px;
+	}
+	input, textarea, select {
+		&:focus {
+			outline:none;
+		}
+	}
+	input[type="text"], input[type="email"], textarea, select {
+		border:2px solid $color-charcoal;
+		border-radius:9px;
+		padding:3px 9px;
+		vertical-align: middle;
+		width:95%;
+		&:focus {
+			border-color:$color-melon;
+		}
+	}
+	input[type=checkbox] {
+		min-height: initial;
+		@include size(20px);
+	}
+	input[type=submit] {
+		@extend .btn;
+		@extend .btnPrimary;
+		margin-right:auto;
+		margin-left:auto;
+	}
+}
+
+.ss-choices {
+	list-style:none;
+	margin-top:3px;
+}
+
+.ss-choice-item {
+	display:inline-block;
+	width:auto;
+	+ .ss-choice-item {
+		margin-left:12px;
+	}
+}
+
+.ss-choice-item-control, .ss-choice-label {
+	display:inline-block;
+	vertical-align:middle;
+}
+
+.ss-choice-label {
+	line-height: 20px;
+}
+
+.ss-q-help, .ss-q-time-hint, .ss-secondary-text {
+	font-size:90%;
+	opacity:0.75;
+}
+
+.ss-form-question {
+	&:nth-of-type(1), &:nth-of-type(2) {
+		@extend .halfWidth;
+	}
+}
+
+#navigation-table {
+	width:100%;
+	tr {
+		text-align: center;
+	}
+	.ss-password-warning {
+		margin-top:24px;
+		text-align: left;
+	}
+}

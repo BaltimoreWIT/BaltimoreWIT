@@ -16,10 +16,11 @@ article {
 }
 
 .articleContent {
-	margin-top:18px;
+	margin:18px 0;
 	word-wrap:break-word;
 	h1, h2, h3, h4, h5, h6 {
 		font-family:$font-body;
+		font-weight: bold;
 		@include scut-rem-fallback(18);
 	}
 	h1 {}
@@ -43,6 +44,7 @@ article {
 		}
 	}
 	.imgWrapper {
+		margin-bottom:12px;
 		text-align:center;
 		@media only screen and (min-width:600px) {
 			float:right;
@@ -59,7 +61,20 @@ article {
 	}
 
 	blockquote, q {
+		color:$color-charcoal;
+		@include scut-rem-fallback(22);
+		font-weight: bold;
+		margin:9px auto;
+		width:75%;
 		cite {
+			background:rgba($color-sunburst,0.5);
+			display: block;
+			font-family: $font-mono;
+			font-style:normal;
+			opacity:0.8;
+			padding-right:8px;
+			text-align: right;
+			text-transform: uppercase;
 		}
 	}
 	hr {
@@ -77,6 +92,10 @@ article {
 		margin-left:auto;
 		text-align: center;
 		max-width:100%;
+	}
+	.btnWrapper {
+		margin:36px 0;
+		text-align: center;
 	}
 }
 

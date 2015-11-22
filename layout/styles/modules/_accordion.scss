@@ -1,0 +1,52 @@
+.accordion {
+	margin:16px auto;
+	.accordion-content {
+		background:rgba(white,0.65);
+		display: none;
+		margin:0;
+		padding:16px 16px 24px;
+		> strong {
+			&:before {
+				color:$color-fiery;
+				content:'x';
+				font-family:$font-mono;
+				@include scut-rem-fallback(22);
+				padding-right:6px;
+			}
+		}
+		a {
+			color:$color-charcoal;
+			&:hover, &:focus {
+				color:$color-offblack;
+			}
+		}
+		li {
+			list-style:disc;
+			margin-left:36px;
+		}
+	}
+	.is-expanded {
+			display: block;
+			span {
+				display:block!important;
+			}
+	}
+
+	> li {
+		&:nth-of-type(odd) {
+			background:$color-fiery;
+		}
+		&:nth-of-type(even) {
+			background:$color-melon;
+		}
+		> a {
+			color:white;
+			display: block;
+			font-family:$font-mono;
+			font-weight: bold;
+			padding:8px;
+			text-decoration: none;
+			text-transform: uppercase;
+		}
+	}
+}
