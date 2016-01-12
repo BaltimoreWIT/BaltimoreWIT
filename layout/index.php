@@ -12,13 +12,13 @@
 					</h3>
 					<article class="sectionContent">
 						<h4 class="articleHeadline">
-							<a href="#">News Title</a>
+							<a href="#">#hellobaltimore</a>
 						</h4>
 						<p class="meta">
 							<span>by</span> 
-							Author Name
+							Baltimore WIT
 						</p>
-						<div class="articleContent">News Post<span class="metaContinueReading">&hellip; <a href="#" title="Continue reading">read more</a></span></div>
+						<div class="articleContent">This content will be updated when the blog post is finalized.<span class="metaContinueReading">&hellip; <a href="#" title="Continue reading">read more</a></span></div>
 					</article>
 				</section>
 				<section class="blog fullView">
@@ -67,11 +67,11 @@
 						<a href="#">Careers</a>
 					</h3>
 					<div class="sectionContent btnWrapper">
-						<a href="/mentoring" class="btn btnDefault">
+						<a href="/careers/mentoring" class="btn btnDefault">
 							Be a
 							<em>mentor</em>
 						</a>
-						<a href="/mentoring" class="btn btnDefault">
+						<a href="/careers/mentoring" class="btn btnDefault">
 							Find a
 							<em>mentor</em>
 						</a>

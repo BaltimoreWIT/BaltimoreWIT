@@ -1,18 +1,36 @@
 
-		<script src="js/vendor/jquery-1.10.2.min.js"></script>
+		<script src="/js/vendor/jquery-1.10.2.min.js"></script>
 		<?php
 			switch ($pageTemplate) {
 				case "homepage" :
-					echo "<script src='js/vendor/jquery.typer.js'></script>";
+					echo "<script src='/js/vendor/jquery.typer.js'></script>";
 			}
 		?>
 		
 		<script>
 			$(document).ready(function() {
 				mobileMenu();
-				if ($("div").hasClass("interior")) {
+				if ($('div').hasClass('interior')) {
 					layoutInit();
 				}
+			});
+
+			// Refills Accordion
+			$('.js-accordion-trigger').bind('click', function(e){
+				jQuery(this).parent().find('.js-accordion-content').slideToggle('fast');
+				jQuery(this).parent().toggleClass('is-expanded');
+				e.preventDefault();
+			});
+
+			$(window).bind('resize', function(e) {
+				window.resizeEvt;
+				$(window).resize(function() {
+					clearTimeout(window.resizeEvt);
+					window.resizeEvt = setTimeout(function() {
+						//code to do after window is resized
+						layoutInit();
+					}, 250);
+				});
 			});
 			
 			function mobileMenu() {
