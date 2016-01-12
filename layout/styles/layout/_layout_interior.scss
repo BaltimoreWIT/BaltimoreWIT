@@ -1,4 +1,7 @@
 .interior {
+	.siteDesc {
+		display:none;
+	}
 	@media only screen and (min-width:730px) {
 		@include display(flex);
 		flex-wrap:wrap;
