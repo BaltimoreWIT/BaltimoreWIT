@@ -11,7 +11,8 @@
 						<h1 class="articleHeadline">Events</h1>
 					</header>
 						<div class="articleContent">
-
+							<div id="js-events" class="eventCalendar">
+							</div>
 						</div>
 						<footer class="articleFooter">
 							<div class="shareWrapper">

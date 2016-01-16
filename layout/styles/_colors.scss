@@ -216,6 +216,25 @@ $sections: (
 	}
 }
 
+.eventCalendar {
+	li {
+		$eventColors: $color-melon, $color-sunburst, $color-fiery;
+		@for $i from 1 through length($eventColors) {
+			$eventColors: append($eventColors, lighten(nth($eventColors, $i), 12));
+		}
+		$eventColorsLength: length($eventColors);
+
+		@for $i from 1 through $eventColorsLength {
+			&:nth-of-type(#{$eventColorsLength}n+#{$i}) {
+				background-color: nth($eventColors, $i);
+			}
+		}
+		a {
+			color:white;
+		}
+	}
+}
+
 .siteFooter {
 	background:darken($color-charcoal,15%);
 	color:lighten($color-cream,8%);

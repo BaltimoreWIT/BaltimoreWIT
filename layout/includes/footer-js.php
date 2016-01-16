@@ -1,5 +1,7 @@
 
 		<script src="/js/vendor/jquery-1.10.2.min.js"></script>
+		<script src="/js/events.js"></script>
+
 		<?php
 			switch ($pageTemplate) {
 				case "homepage" :

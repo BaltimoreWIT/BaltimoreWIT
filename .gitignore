@@ -1,2 +1,4 @@
 # Angelique's sublime project files
 *.sublime-*
+layout/.sass-cache/
+layout/styles/*.css.map

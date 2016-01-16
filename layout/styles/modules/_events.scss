@@ -7,11 +7,12 @@
 	}
 }
 
-.eventList {
+.eventList ul {
 	list-style:none;
 	margin:0;
 	li {
-		margin:0 0 12px;
+		display: block;
+		padding-bottom:12px;
 		&:last-of-type {
 			border-bottom:none;
 			margin-bottom:0;
@@ -20,34 +21,17 @@
 }
 
 .eventItem {
-	@include align-items(baseline);
-	@include display(flex);
 	text-decoration:none;
-	.dateWrapper, .eventWrapper {
-		@include flex(0 1 auto);
-	}
 	.dateWrapper {
 		font-family:$font-mono;
 		font-weight:bold;
-		padding:6px;
-		text-align:center;
 		text-transform: uppercase;
-		width:20%;
-		.month, .date {
-			display:block;
-			line-height: 1;
-		}
-		.month {
-			@include scut-rem-fallback(11);
-		}
 		.date {
 			@include scut-rem-fallback(28);
 		}
 	}
 	.eventWrapper {
 		line-height: 1.2;
-		padding:6px 6px 6px 12px;
-		width:80%;
 		.eventTitle {
 			font-family:$font-mono;
 			font-weight:bold;
@@ -56,6 +40,64 @@
 		}
 		@media only screen and (min-width:1024px) {
 			@include scut-rem-fallback(18);
+		}
+	}
+	.eventList & {
+		@include align-items(baseline);
+		@include display(flex);
+		.dateWrapper, .eventWrapper {
+			@include flex(0 1 auto);
+		}
+		.dateWrapper {
+			padding:6px;
+			text-align:center;
+			min-width: 50px;
+			width:20%;
+			.month, .date {
+				display:block;
+				line-height: 1;
+			}
+			.month {
+				@include scut-rem-fallback(11);
+			}
+		}
+		.eventWrapper {
+			padding:6px 6px 6px 12px;
+			width:80%;
+		}
+
+	}
+	.eventCalendar & {
+		.dateWrapper {
+			display:block;
+			margin-bottom: 12px;
+			text-align:right;
+			.month {
+				@include scut-rem-fallback(18);
+				margin-right:6px;
+			}
+		}
+	}
+}
+
+.eventCalendar ul {
+	@include clearfix;
+	@include display(flex);
+	@include flex-wrap(wrap);
+	li {
+		@include transition (all 0.2s ease-in-out);
+		@include flex(0 1 auto);
+		@include align-self(stretch);
+		display: block;
+		margin: 3px 9px;
+		padding: 3px 6px 12px;
+		text-align: center;
+		width: 175px;
+		&:hover, &:focus {
+			opacity:0.85;
+		}
+		a {
+			display:block;
 		}
 	}
 }
