@@ -9,6 +9,7 @@
 				<article>
 					<header class="articleHeader">
 						<h1 class="articleHeadline">#hellobaltimore</h1>
+						<p class="meta"><span>published on</span> January 21, 2016</p>
 					</header>
 						<div class="articleContent">
 							<p>Some of our first goals with the creation of this site surrounded obtaining donations for women focused events and mentorship. We quickly realized the need for many more features as time went on and more conversations with local technologists occurred. All of our agile friends are probably cringing thinking about ‘adding new features’ to a 1.0 site roadmap but we don’t need to beat anyone to market here. We need to do this right and lay the foundation of success. If that meant adding another month to the project, then so be it.</p>

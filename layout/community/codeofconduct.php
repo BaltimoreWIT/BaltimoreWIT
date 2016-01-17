@@ -11,7 +11,10 @@
 						<h1 class="articleHeadline">Code of Conduct</h1>
 					</header>
 						<div class="articleContent">
-
+							<p>If we didn’t need it, we wouldn’t post it.</p>
+							<p>All participants of BWIT activities (including, but not limited to, events, blogs and social media accounts) are expected to engage in healthy conversation and learning. In return, participants should feel comfortable to share their experiences, personal stories in an environment free of any kind of behavior that can be seen as harassing or inappropriate.</p>
+							<p>If you have any accessibility or accommodation concerns or needs, please don’t hesitate to reach out.</p>
+							<p>Event organizers are encouraged to leave direct contact emails for those who wish to report code of conduct violations.</p>
 						</div>
 						<footer class="articleFooter">
 							<div class="shareWrapper">

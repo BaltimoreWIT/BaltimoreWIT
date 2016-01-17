@@ -8,22 +8,19 @@
 				<?php include "events.php" ?>
 				<section class="news fullView">
 					<h3 class="sectionHeading">
-						<a href="#" title="View All News">News</a>
+						<a href="/news/" title="View All News">News</a>
 					</h3>
 					<article class="sectionContent">
 						<h4 class="articleHeadline">
-							<a href="#">#hellobaltimore</a>
+							<a href="/news/2016/hellobaltimore">#hellobaltimore</a>
 						</h4>
-						<p class="meta">
-							<span>by</span> 
-							Baltimore WIT
-						</p>
-						<div class="articleContent">This content will be updated when the blog post is finalized.<span class="metaContinueReading">&hellip; <a href="#" title="Continue reading">read more</a></span></div>
+						<p class="meta"><span>published on</span> January 21, 2016</p>
+						<div class="articleContent">This content will be updated when the blog post is finalized.<span class="metaContinueReading">&hellip; <a href="																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				/news/2016/hellobaltimore" title="Continue reading">read more</a></span></div>
 					</article>
 				</section>
-				<section class="blog fullView">
+<!-- 				<section class="blog fullView">
 					<h3 class="sectionHeading">
-						<a href="#" title="View All Blogs">Blog</a>
+						<a href="/blog/" title="View All Blogs">Blog</a>
 					</h3>
 					<article class="sectionContent">
 						<h4 class="articleHeadline">
@@ -38,7 +35,7 @@
 				</section>
 				<section class="blog fullView">
 					<h3 class="sectionHeading">
-						<a href="#" title="View All Blogs">Blog</a>
+						<a href="/blog/" title="View All Blogs">Blog</a>
 					</h3>
 					<article class="sectionContent">
 						<h4 class="articleHeadline">
@@ -50,9 +47,9 @@
 						<div class="articleContent">Blog Post<span class="metaContinueReading">&hellip; <a href="#" title="Continue reading">read more</a></span></p>
 					</article>
 				</section>
-				<section class="careers minView">
+ -->				<section class="careers minView">
 					<h3 class="sectionHeading">
-						<a href="#">Careers</a>
+						<a href="/careers/">Careers</a>
 					</h3>
 					<div class="sectionContent">
 						<div class="jobTweets">
@@ -64,7 +61,7 @@
 				</section>
 				<section class="careers minView">
 					<h3 class="sectionHeading">
-						<a href="#">Careers</a>
+						<a href="/careers/">Careers</a>
 					</h3>
 					<div class="sectionContent btnWrapper">
 						<a href="/careers/mentoring" class="btn btnDefault">
@@ -79,21 +76,21 @@
 				</section>
 				<section class="community minView">
 					<h3 class="sectionHeading">
-						<a href="#">Community</a>
+						<a href="/community/">Community</a>
 					</h3>
 					<div class="sectionContent">
 						<ul>
 							<li>
-								<a href="#">Blog</a>
+								<a href="/blog/">Blog</a>
 							</li>
 							<li>
-								<a href="#">Resources</a>
+								<a href="/community/resources">Resources</a>
 							</li>
 							<li>
-								<a href="#">Connect</a>
+								<a href="/community/#connect">Connect</a>
 							</li>
 							<li>
-								<a href="#">Code of Conduct</a>
+								<a href="/community/codeofconduct">Code of Conduct</a>
 							</li>
 						</ul>
 					</div>
