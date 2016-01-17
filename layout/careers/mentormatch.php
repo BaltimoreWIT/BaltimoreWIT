@@ -1,11 +1,11 @@
 <?php
- 	ini_set("include_path", ".:../:./includes:../includes");
- 	$pageTemplate = "interior";
+	ini_set("include_path", ".:../:./includes:../includes");
+	$pageTemplate = "interior";
 	$pageTitle = "Mentoring";
 	include "header.php";
 ?>
 	<script type="text/javascript">
-    	/**
+		/**
 	 * @license
 	 *
 	 * H5F 1.1.1
@@ -38,6 +38,10 @@
 	</script>
 			<main>
 				<article>
+					<header class="articleHeader">
+						<h1 class="articleHeadline">Mentoring Matching Form</h1>
+					</header>
+					<div class="articleContent">
 					<div itemscope="" itemtype="http://schema.org/CreativeWork/FormObject">
 					<meta itemprop="name" content="Mentoring Matching Form">
 
@@ -45,9 +49,7 @@
 					<meta itemprop="embedUrl" content="https://docs.google.com/forms/d/1eykz1TYBfl2GEICMCzEqP4OY1L2QuewPHSP8QfHhFdU/viewform?embedded=true">
 
 					<div class="ss-form-container"><div class="ss-header-image-container"><div class="ss-header-image-image"><div class="ss-header-image-sizer"></div></div></div>
-					<div class="ss-top-of-page"><div class="ss-form-heading"><h1 class="ss-form-title" dir="ltr">Mentoring Matching Form</h1>
-
-
+					<div class="ss-top-of-page"><div class="ss-form-heading">
 					<div class="ss-required-asterisk" aria-hidden="true">* Required</div></div></div>
 					<div class="ss-form"><form action="https://docs.google.com/forms/d/1eykz1TYBfl2GEICMCzEqP4OY1L2QuewPHSP8QfHhFdU/formResponse" method="POST" id="ss-form" target="_blank" onsubmit=""><ol role="list" class="ss-question-list" style="padding-left: 0">
 					<div class="ss-form-question errorbox-good" role="listitem">
@@ -213,7 +215,7 @@
 
 					<div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
 					<input type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action ">
-					<div class="ss-password-warning ss-secondary-text">Never submit passwords through Google Forms.</div></td>
+					</td>
 					</tr></tbody></table></div></ol></form></div>
 
 
@@ -222,8 +224,10 @@
 
 					<script type="text/javascript" src="https://docs.google.com/static/forms/client/js/1773870735-formviewer_prd.js"></script>
 					<script type="text/javascript">H5F.setup(document.getElementById('ss-form'));
-					          _initFormViewer(
-					            "[100,,[[[1599897104,[[2,102]\n]\n]\n]\n]\n]\n");</script></div>
+							  _initFormViewer(
+								"[100,,[[[1599897104,[[2,102]\n]\n]\n]\n]\n]\n");</script></div>
+
+					</div>
 				</article>
 			</main>
 
