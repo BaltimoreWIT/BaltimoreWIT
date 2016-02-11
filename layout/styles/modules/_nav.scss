@@ -1,4 +1,4 @@
-@import '../libs/scrollbars';
+@import '../libs/hover-state', '../libs/scrollbars';
 
 .navMenu {
 	display:block;
@@ -59,7 +59,7 @@
 				margin-left:-9px;
 				position:relative;
 				min-width:120px;
-				&:hover, &:focus {
+				@include hover-state {
 					> .submenu {
 						display:block;
 					}

@@ -4,6 +4,19 @@
 	padding-left:0;
 }
 
+.archiveList {
+	li {
+		margin-bottom:9px;
+		&:before {
+			background:$color-melon;
+			content:'';
+			display:inline-block;
+			margin-right: 6px;
+			@include size(14px);
+		}
+	}
+}
+
 .socialWrapper {
 	.siteFooter & {
 		li {

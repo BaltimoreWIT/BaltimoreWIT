@@ -1,11 +1,13 @@
 
-		<script src="/js/vendor/jquery-1.10.2.min.js"></script>
+		<script src="/js/vendor/jquery-1.11.1.min.js"></script>
 		<script src="/js/events.js"></script>
 
 		<?php
 			switch ($pageTemplate) {
 				case "homepage" :
 					echo "<script src='/js/vendor/jquery.typer.js'></script>";
+					echo "<script src='/js/tweets.js'></script>";
+"
 			}
 		?>
 		

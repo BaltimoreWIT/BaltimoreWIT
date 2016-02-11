@@ -1,4 +1,4 @@
-@import '../variables';
+@import '../libs/hover-state', '../variables';
 
 .btn {
 	border-radius:9px;
@@ -36,7 +36,7 @@
 	border:2px solid $color-fiery;
 	color:white!important;
 	min-width:90px;
-	&:hover {
+	@include hover-state {
 		background-color:darken($color-fiery,3%);
 	}
 }
@@ -44,7 +44,7 @@
 	background-color:white;
 	border:2px solid $color-sunburst;
 	color:$color-fiery;
-	&:hover {
+	@include hover-state {
 		border-color: $color-fiery;
 	}
 }

@@ -28,7 +28,7 @@
 				</p>
 				<ul class="noList wrapperInline legal">
 					<li class="element">
-						&copy; Copyright 2015 Copyright Name
+						&copy; Copyright <?php echo date("Y"); ?> Copyright Name
 					</li>
 					<li class="element">
 						<a href="/credits">Site Credits</a>

@@ -4,14 +4,30 @@
 		<meta charset="utf-8">
 		<meta content="IE=edge" http-equiv="X-UA-Compatible">
 		<title>
-			<?php
-				if (isset($pageTitle)) {
-				    echo ${pageTitle} . " | ";
-				}
-			?>
-			Baltimore Women in Tech
+		<?php
+			if (isset($pageTitle)) {
+			echo ${pageTitle} . " | ";
+			}
+		?>
+		Baltimore Women in Tech
 		</title>
-		<meta description="">
+		<?php if (isset($ogTitle)) { ?>
+		<meta property="og:title" content="<?php echo $ogTitle ?>" />
+		<?php } else if (isset($pageTitle)) { ?>
+		<meta property="og:title" content="<?php echo $pageTitle ?>" />
+		<?php } else { ?>
+		<meta property="og:title" content="Baltimore Women in Tech" />
+		<?php } ?>
+
+		<?php if (isset($metaDesc)) { ?>
+		<meta description="<?php echo $metaDesc ?>">
+		<?php }  if (isset($ogType)) { ?>
+		<meta property="og:type" content="<?php echo $ogType ?>" />
+		<?php }  if (isset($ogURL)) { ?>
+		<meta property="og:url" content="<?php echo $ogURL ?>" />
+		<?php }  if (isset($ogImage)) { ?>
+		<meta property="og:image" content="<?php echo $ogImage ?>" />
+		<?php } ?>
 		<link href="/styles/<?php echo $pageTemplate ?>.css" media="all" rel="stylesheet" />
 		<meta content="width=device-width, initial-scale=1" name="viewport">
 		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -57,7 +73,7 @@
 							<a href="/community" title="Baltimore Women in Tech Community">Community</a>
 							<ul class="submenu">
 								<li>
-									<a href="/community/events" title="Baltimore Women in Tech Events">Events</a>
+									<a href="/community/calendar" title="Baltimore Women in Tech Events">Events</a>
 								</li>
 								<li>
 									<a href="/blog" title="Blog Posts">Blog</a>
@@ -89,6 +105,6 @@
 					<div class="btnWrapper">
 						<a class="btn btnPrimary joinCTA" href="/about/#join">Join</a>
 						<a class="btn btnDefault" href="/about">Learn More</a>
-					</div>	
+					</div>
 				</header>
 			</div>

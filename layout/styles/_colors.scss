@@ -1,4 +1,4 @@
-@import 'variables';
+@import 'libs/hover-state', 'variables';
 
 html {
 	background:$color-offwhite;
@@ -17,7 +17,7 @@ body {
 .siteNavWrapper {
 	a {
 		color:$color-offwhite;
-		&:hover, &:focus {
+		@include hover-state {
 			color:$color-fiery;
 		}
 	}
@@ -37,7 +37,7 @@ body {
 		.homepage & {
 			background:rgba($color-offblack,0.35);
 			li {
-				&:hover, &:focus {
+				@include hover-state {
 					a {
 						background:$color-offblack;
 					}
@@ -50,7 +50,7 @@ body {
 		.interior & {
 			background:$color-charcoal;
 			li a {
-				&:hover, &:focus {
+				@include hover-state {
 						background:$color-offblack;
 				}
 			}
@@ -78,7 +78,7 @@ body {
 	article {
 		.metaContinueReading a {
 			color:$color-fiery;
-			&:hover, &:focus {
+			@include hover-state {
 				color:darken($color-fiery,8%);
 			}
 		}
@@ -105,7 +105,7 @@ body {
 		}
 	}
 	.eventItem {
-		&:hover, &:focus {
+		@include hover-state {
 			.dateWrapper, .eventTitle span {
 				background-position:0 0;
 			}
@@ -128,12 +128,12 @@ body {
 		.sectionHeading {
 			background-position:100% 0;
 			background-size:200% 100%;
-			&:hover, &:focus {
+			@include hover-state {
 				background-position:0 0;
 			}
 		}
 		.articleHeadline a {
-			&:hover, &:focus {
+			@include hover-state {
 				color:$themeSecondary;
 			}
 		}
@@ -200,13 +200,13 @@ $sections: (
 			&.logo-fb {
 				@include linear-gradient(to bottom, #3b5998, #3b5998 50%, $color-sunburst 50%, $color-sunburst);
 			}
-			&:hover, &:focus {
+			@include hover-state {
 				background-position:0 0;
 			}			
 		}
 	
 		// .icon {
-		// 	&:hover, &:focus {
+		// 	@include hover-state {
 		// 		path {
 		// 			fill:$color-fiery;
 		// 			stroke:$color-fiery;
@@ -240,7 +240,7 @@ $sections: (
 	color:lighten($color-cream,8%);
 	a {
 		color:lighten($color-cream,20%);
-		&:hover, &:focus {
+		@include hover-state {
 			color:white;
 			.icon {
 				background:white;
@@ -259,7 +259,7 @@ $sections: (
 	}
 	.bmoreLink {
 		a {
-			&:hover, &:focus {
+			@include hover-state {
 				em {
 					color:$color-fiery;
 				}

@@ -1,3 +1,5 @@
+@import '../libs/hover-state';
+
 .events {
 	margin-bottom:36px;
 	padding:20px 14px;
@@ -93,7 +95,7 @@
 		padding: 3px 6px 12px;
 		text-align: center;
 		width: 175px;
-		&:hover, &:focus {
+		@include hover-state {
 			opacity:0.85;
 		}
 		a {

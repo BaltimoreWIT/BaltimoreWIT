@@ -4,6 +4,6 @@
 					<div id="js-events" class="wrapper eventList">
 					</div>
 					<p class="alignCenter">
-						<a href="/community/events" class="btn btnDefault">View All Events</a>
+						<a href="/community/calendar" class="btn btnDefault">View All Events</a>
 					</p>
 				</section>

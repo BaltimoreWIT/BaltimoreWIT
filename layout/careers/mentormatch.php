@@ -2,6 +2,11 @@
 	ini_set("include_path", ".:../:./includes:../includes");
 	$pageTemplate = "interior";
 	$pageTitle = "Mentoring";
+	// $metaDesc = "";
+	$ogTitle = "Mentor Match via Baltimore Women in Tech";
+	// $ogType = "article";
+	$ogImage = "http://baltimorewomenintech.com/images/bwit_logotext_li.png";
+	$ogURL = "http://baltimorewomenintech.com/careers/mentormatch/";
 	include "header.php";
 ?>
 	<script type="text/javascript">
