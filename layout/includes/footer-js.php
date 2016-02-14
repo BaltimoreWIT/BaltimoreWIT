@@ -7,7 +7,6 @@
 				case "homepage" :
 					echo "<script src='/js/vendor/jquery.typer.js'></script>";
 					echo "<script src='/js/tweets.js'></script>";
-"
 			}
 		?>
 		
