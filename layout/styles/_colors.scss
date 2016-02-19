@@ -75,14 +75,6 @@ body {
 			color:white;
 		}
 	}
-	article {
-		.metaContinueReading a {
-			color:$color-fiery;
-			@include hover-state {
-				color:darken($color-fiery,8%);
-			}
-		}
-	}
 }
 
 .homepage .events {
@@ -174,6 +166,15 @@ $sections: (
 
 @each $section, $color in $sections {
 	@include theme($section, $color);
+}
+
+.articleContent, .sectionContent {
+	a {
+		color:$color-melon;
+		@include hover-state {
+			color:$color-fiery;
+		}
+	}
 }
 
 .interior {

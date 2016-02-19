@@ -17,6 +17,44 @@
 	}
 }
 
+.legal {
+	li {
+		white-space: nowrap;
+		&:after {
+			border-right-style:solid;
+			border-right-width:1px;
+			content:'';
+			display:inline;
+			padding:0 5px;
+		}
+		&:last-of-type:after {
+			display:none;
+		}
+	}
+}
+
+.memberList {
+	li {
+		text-align:center;
+	}
+	 img, span {
+	 	&.memberLogo {
+			display:block;
+			margin:0 auto;
+			padding:6px;
+			@include size(120px);
+	 	}
+	}
+	span.memberLogo {
+		background:$color-sunburst;
+		border-radius:6px;
+		color:white;
+		font-family:$font-mono;
+		@include scut-rem-fallback(36);
+		line-height:120px;
+	}
+}
+
 .socialWrapper {
 	.siteFooter & {
 		li {
@@ -44,22 +82,6 @@
 				margin-top:14px;
 				margin-bottom:0;			
 			}
-		}
-	}
-}
-
-.legal {
-	li {
-		white-space: nowrap;
-		&:after {
-			border-right-style:solid;
-			border-right-width:1px;
-			content:'';
-			display:inline;
-			padding:0 5px;
-		}
-		&:last-of-type:after {
-			display:none;
 		}
 	}
 }

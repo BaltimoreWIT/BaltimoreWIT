@@ -19,13 +19,24 @@
 							<p>Baltimore Women in Technology is a platform for collaboration among women in digital careers and studies. We facilitate idea exchange, learning, mentoring and networking, and we advocate for diversity in our fields. Our community is comprised of a multitude of backgrounds, special interests and passions who band together to tackle the gender divide and create camaraderie.</p>
 							<p>Our special interests and passions have led to affinity groups and genuine grassroots movements. Some of us work on pipeline initiatives by educating and advocating for K-12 STEM programs for all, creating support systems for girls or training women for advancement of skills/career change into the digital world. Others dig deeper into solutions for retention problems, growth of women into leaders, funding women-led businesses or coaching others on unconscious bias in the workplace. Our common bond is clear though &mdash; our love for Baltimore and our desire to change the ratio.</p>
 							<p>Our events and meetings operate in safe environments. This means that we enforce a <a href="/community/codeofconduct">code of conduct</a> to provide all participants the space to speak freely, without judgement or harassment. We expect that events we are cross promoting have the same philosophy.</p>
-							<p>Baltimore Women in Technology is fiscally sponsored by a local non-profit, Technology Growth Initiative. TGI supports groups and individuals involved with technology learning and development to provide collaboration and an operating framework.</p>
+
+							<h2 id="members">Members</h2>
+							<ul class="noList wrapperFlex memberList">
+								<li class="elementWrapper"><a href="http://www.meetup.com/Baltimore-Women-in-Computing-Meetup/" title="Baltimore Women in Computing"><span class="memberLogo">BWIC</span>
+								Baltimore Women in Computing</a></li>
+								<li class="elementWrapper"><a href="http://gdibaltimore.com" title="Girl Develop It Baltimore"><img src="/images/members/gdi.png" alt="Girl Develop It" class="memberLogo">Girl Develop It Baltimore</a></li>
+							</ul>
 
 							<h2 id="join">Join</h2>
+							<h3 class="h4">As an individual</h3>
+							<p>Individuals are invited to join our mailing list for updates on local events and to join our individual <a href="#members">member organizations</a>.</p>
+
+							<h3 class="h4">As a member organization</h3>
+							<p>To join Baltimore Women in Tech, your organization must have a membership comprised of more than 50% women and a focus on technology. Your events must have a published code of conduct. Member organizations will have their events posted to our community calendar and be invited to participate in future BWIT events and collaborations. <a href="mailto:baltimorewit@gmail.com">Contact us about joining this effort.</a></p>
+
 							<h2 id="donate">Donate</h2>
 							<p>Some language about nonprofit status and also what donations are/will be used for.</p>
-							<p>Be clear about role of Technology Growth Initiative, as that name will appear on the PayPal page.</p>
-							<a class="btn btnPrimary donateCTA" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=3FDGPG72G7M74" target="_blank" title="Donate to Baltimore Women in Tech">Donate</a>
+							<a class="btn btnPrimary donateCTA" href="#" target="_blank" title="Donate to Baltimore Women in Tech">Donate</a>
 						</div>
 						<footer class="articleFooter">
 							<div class="shareWrapper">

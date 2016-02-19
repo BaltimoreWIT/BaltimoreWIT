@@ -21,28 +21,33 @@ article {
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: bold;		
 	}
-	h1, h2, h3, h4 {
+	h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
 		font-family:$font-heading;
 		@include scut-rem-fallback(20);
 	}
-	h1, h2 {
+	h1, h2, .h1, .h2 {
 		border-bottom:2px solid $color-melon;
 		margin:30px 0 9px;
 	}
-	h3, h4, h5, h6 {
+	h3, h4, h5, h6, .h3, .h4, .h5, .h6 {
 		color:$color-charcoal;		
 		margin:24px 0 6px;
 	}
-	h3 {
+	h3, .h3 {
 		border-bottom:2px solid $color-charcoal;
 	}
-	h5 {
+	h5, .h5 {
 		text-transform:uppercase;
 	}
-	h6 {
+	h6, .h6 {
 		border-bottom:1px solid $color-charcoal;
 	}
-
+	.h1, .h2, .h3, .h4, .h6 {
+		text-transform:none;
+	}
+	.h4, .h5 {
+		border-bottom:none;
+	}
 	p, ul, dl {
 		margin-bottom:12px;
 	}

@@ -44,6 +44,7 @@
 						<li>
 							<a href="/about" title="About Us">About</a>
 							<ul class="submenu">
+								<li><a href="/about/#members" title="Member Organizations">Members</a></li>
 								<li>
 									<a href="/about/#join" title="Join Baltimore Women in Tech">Join</a>
 								</li>
