@@ -25,6 +25,7 @@
 								<li class="elementWrapper"><a href="http://www.meetup.com/Baltimore-Women-in-Computing-Meetup/" title="Baltimore Women in Computing"><span class="memberLogo">BWIC</span>
 								Baltimore Women in Computing</a></li>
 								<li class="elementWrapper"><a href="http://gdibaltimore.com" title="Girl Develop It Baltimore"><img src="/images/members/gdi.png" alt="Girl Develop It" class="memberLogo">Girl Develop It Baltimore</a></li>
+								<li class="elementWrapper"><a href="http://lesbianswhotech.org/events/city/baltimore/" title="Lesbians Who Tech Baltimore"><img src="/images/members/lwt.png" alt="Lesbians Who Tech" class="memberLogo">Lesbians Who Tech</a></li>
 							</ul>
 
 							<h2 id="join">Join</h2>
