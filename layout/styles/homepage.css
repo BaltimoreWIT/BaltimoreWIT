@@ -1081,13 +1081,13 @@ article {
     .articleContent img.alignLeft {
       float: left;
       padding-left: 0; }
-  .articleContent table {
+  .articleContent table:not(#navigation-table) {
     width: 100%; }
-    .articleContent table th {
+    .articleContent table:not(#navigation-table) th {
       border-bottom: 1px solid #5D5848; }
-    .articleContent table tbody tr {
+    .articleContent table:not(#navigation-table) tbody tr {
       border-bottom: 1px solid rgba(93, 88, 72, 0.25); }
-      .articleContent table tbody tr:hover, .articleContent table tbody tr:active, .articleContent table tbody tr:focus {
+      .articleContent table:not(#navigation-table) tbody tr:hover, .articleContent table:not(#navigation-table) tbody tr:active, .articleContent table:not(#navigation-table) tbody tr:focus {
         background: rgba(208, 189, 126, 0.4); }
   .articleContent blockquote, .articleContent q {
     color: #5D5848;
@@ -1417,17 +1417,20 @@ article {
 
 .ss-choices {
   list-style: none;
-  margin-top: 3px; }
+  margin-top: 3px;
+  margin-left: 0 !important; }
 
-.ss-choice-item {
+#GFormMentor .ss-choice-item {
   display: inline-block;
   width: auto; }
-  .ss-choice-item + .ss-choice-item {
+  #GFormMentor .ss-choice-item + .ss-choice-item {
     margin-left: 12px; }
 
 .ss-choice-item-control, .ss-choice-label {
   display: inline-block;
   vertical-align: middle; }
+  #GFormContact .ss-choice-item-control, #GFormContact .ss-choice-label {
+    display: inline; }
 
 .ss-choice-label {
   line-height: 20px; }

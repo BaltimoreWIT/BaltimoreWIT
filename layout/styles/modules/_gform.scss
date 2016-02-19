@@ -79,9 +79,10 @@
 .ss-choices {
 	list-style:none;
 	margin-top:3px;
+	margin-left:0!important;
 }
 
-.ss-choice-item {
+#GFormMentor .ss-choice-item {
 	display:inline-block;
 	width:auto;
 	+ .ss-choice-item {
@@ -92,6 +93,9 @@
 .ss-choice-item-control, .ss-choice-label {
 	display:inline-block;
 	vertical-align:middle;
+	#GFormContact & {
+		display:inline;
+	}
 }
 
 .ss-choice-label {
