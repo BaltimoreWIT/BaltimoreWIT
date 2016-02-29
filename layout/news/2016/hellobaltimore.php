@@ -9,7 +9,7 @@
 				<article>
 					<header class="articleHeader">
 						<h1 class="articleHeadline">#hellobaltimore</h1>
-						<p class="meta"><span>published on</span> January 21, 2016</p>
+						<p class="meta"><span>published on</span> February 28, 2016</p>
 					</header>
 						<div class="articleContent">
 							<p>We set out on this journey to create visibility for the many grassroots women in technology initiatives happening in Baltimore. Did you know they were happening? When? Wondering how you can participate? This site aims to be a resource for those questions and the start of our digital roots.</p>
