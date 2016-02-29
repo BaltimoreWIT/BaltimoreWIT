@@ -34,9 +34,13 @@ $cal = new Google_Service_Calendar($client);
 $calendarId = 'kq0q82l48tj0k8hlvi024edolbdru4l9@import.calendar.google.com';
 
 $calendarIds = array('baltimorewit@gmail.com',
+                     //GDI
                      'kq0q82l48tj0k8hlvi024edolbdru4l9@import.calendar.google.com',
-                     'd9v9gjtsen6uqtcgfnnaaek09070ov1o@import.calendar.google.com',
-                     '7jblfrr6pbtgc0j2issg5p1i9atj099a@import.calendar.google.com',
+                     //BWIC
+                     'm1nda212eei91mqsmc6c7rrp3q6bo2la@import.calendar.google.com',
+                     //SWE
+                     'k2gqn0kab9rjos6tth5o9eg3c2bibfhp@import.calendar.google.com',
+                     //UMBCCWIT
                      'je5b4bothch2k08pf9a8jbdrmqheveo8@import.calendar.google.com');
 //TELL GOOGLE HOW WE WANT THE EVENTS
 $params = array(
