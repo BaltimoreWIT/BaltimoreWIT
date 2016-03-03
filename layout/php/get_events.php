@@ -47,7 +47,7 @@ $params = array(
 //CAN'T USE TIME MIN WITHOUT SINGLEEVENTS TURNED ON,
 //IT SAYS TO TREAT RECURRING EVENTS AS SINGLE EVENTS
     'singleEvents' => true,
-    'orderBy' => 'startTime',
+    'orderBy' => 'dateTime',
     //'timeMin' => date(DateTime::ATOM),//ONLY PULL EVENTS STARTING TODAY
     'maxResults' => 7 //ONLY USE THIS IF YOU WANT TO LIMIT THE NUMBER
                   //OF EVENTS DISPLAYED
