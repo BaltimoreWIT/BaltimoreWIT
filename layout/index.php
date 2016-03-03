@@ -16,10 +16,10 @@
 	</h3>
 	<article class="sectionContent">
 		<h4 class="articleHeadline">
-		<a href="/news/2016/hellobaltimore">#hellobaltimore</a>
+		<a href="/news/2016/hellobaltimore.php">#hellobaltimore</a>
 		</h4>
-		<p class="meta"><span>published on</span> January 21, 2016</p>
-		<div class="articleContent">This content will be updated when the blog post is finalized.<span class="metaContinueReading">&hellip; <a href="/news/2016/hellobaltimore" title="Continue reading">read more</a></span></div>
+		<p class="meta"><span>published on</span> February 28, 2016</p>
+		<div class="articleContent">This content will be updated when the blog post is finalized.<span class="metaContinueReading">&hellip; <a href="/news/2016/hellobaltimore.php" title="Continue reading">read more</a></span></div>
 	</article>
 </section>
 <!-- 				<section class="blog fullView">

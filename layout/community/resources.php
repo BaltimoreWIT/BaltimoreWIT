@@ -5,8 +5,8 @@
 	// $metaDesc = "";
 	$ogTitle = "Baltimore Women in Tech Resources";
 	// $ogType = "article";
-	$ogImage = "http://baltimorewomenintech.com/images/bwit_logotext_li.png";
-	$ogURL = "http://baltimorewomenintech.com/community/resources/";
+	$ogImage = "http://baltimorewit.org/images/bwit_logotext_li.png";
+	$ogURL = "http://baltimorewit.org/community/resources/";
 	include "header.php";
 ?>
 

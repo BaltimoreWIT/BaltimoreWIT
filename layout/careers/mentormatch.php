@@ -5,8 +5,8 @@
 	// $metaDesc = "";
 	$ogTitle = "Mentor Match via Baltimore Women in Tech";
 	// $ogType = "article";
-	$ogImage = "http://baltimorewomenintech.com/images/bwit_logotext_li.png";
-	$ogURL = "http://baltimorewomenintech.com/careers/mentormatch/";
+	$ogImage = "http://baltimorewit.org/images/bwit_logotext_li.png";
+	$ogURL = "http://baltimorewit.org/careers/mentormatch/";
 	include "header.php";
 ?>
 	<script type="text/javascript">

@@ -5,8 +5,8 @@
 	// $metaDesc = "";
 	$ogTitle = "Community Calendar from Baltimore Women in Tech";
 	// $ogType = "article";
-	$ogImage = "http://baltimorewomenintech.com/images/bwit_logotext_li.png";
-	$ogURL = "http://baltimorewomenintech.com/community/calendar/";
+	$ogImage = "http://baltimorewit.org/images/bwit_logotext_li.png";
+	$ogURL = "http://baltimorewit.org/community/calendar/";
 	include "header.php";
 ?>
 

@@ -31,13 +31,13 @@ $cal = new Google_Service_Calendar($client);
 //THE CALENDAR ID, FOUND IN CALENDAR SETTINGS. IF YOUR CALENDAR IS THROUGH GOOGLE APPS
 //YOU MAY NEED TO CHANGE THE CENTRAL SHARING SETTINGS. THE CALENDAR FOR THIS SCRIPT
 //MUST HAVE ALL EVENTS VIEWABLE IN SHARING SETTINGS.
-$calendarId = 'kq0q82l48tj0k8hlvi024edolbdru4l9@import.calendar.google.com';
+$calendarId = 'baltimorewit@gmail.com';
 
 $calendarIds = array('baltimorewit@gmail.com',
                      //GDI
                      'kq0q82l48tj0k8hlvi024edolbdru4l9@import.calendar.google.com',
                      //BWIC
-                     'm1nda212eei91mqsmc6c7rrp3q6bo2la@import.calendar.google.com',
+                     'moiudue3qc9oe1kqpnmsmcl24o@group.calendar.google.com',
                      //SWE
                      'k2gqn0kab9rjos6tth5o9eg3c2bibfhp@import.calendar.google.com',
                      //UMBCCWIT

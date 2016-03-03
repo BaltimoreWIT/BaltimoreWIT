@@ -5,8 +5,8 @@
 	// $metaDesc = "";
 	$ogTitle = "Job Opportunities via Baltimore Women in Tech";
 	// $ogType = "article";
-	$ogImage = "http://baltimorewomenintech.com/images/bwit_logotext_li.png";
-	$ogURL = "http://baltimorewomenintech.com/careers/jobs/";
+	$ogImage = "http://baltimorewit.org/images/bwit_logotext_li.png";
+	$ogURL = "http://baltimorewit.org/careers/jobs/";
 	include "header.php";
 ?>
 
