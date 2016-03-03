@@ -15,13 +15,11 @@ Props to commenter Matt for pointing out the maxResults parameter.
 //https://github.com/google/google-api-php-client
 //DOWNLOAD IT AND PUT IT ON YOUR WEBSERVER IN THE ROOT FOLDER.
 include(__DIR__.'/google-api-php-client/src/Google/autoload.php'); 
- 
-function compare($a, $b) {
-    $t1 = strtotime($a->start->dateTime);
-    $t2 = strtotime($b->start->dateTime);
-    return $t1 - $t2;
-}
 
+function sortFunction( $a, $b ) {
+    return strtotime($a[1]) - strtotime($b[1]);
+}
+usort($data, "sortFunction");
  
 //TELL GOOGLE WHAT WE'RE DOING
 $client = new Google_Client();
@@ -47,7 +45,7 @@ $params = array(
 //CAN'T USE TIME MIN WITHOUT SINGLEEVENTS TURNED ON,
 //IT SAYS TO TREAT RECURRING EVENTS AS SINGLE EVENTS
     'singleEvents' => true,
-    'orderBy' => 'dateTime',
+    'orderBy' => 'sortFunction',
     //'timeMin' => date(DateTime::ATOM),//ONLY PULL EVENTS STARTING TODAY
     'maxResults' => 7 //ONLY USE THIS IF YOU WANT TO LIMIT THE NUMBER
                   //OF EVENTS DISPLAYED
