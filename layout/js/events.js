@@ -11,7 +11,7 @@ $(function(){
 				var decodedResponse = JSON.parse(response);
 				console.log(decodedResponse);
 				$.each(decodedResponse, function(i, ev) {
-					var date = new Date(ev.day.date);
+					var date = new Date(ev.day.date); 
 					var day = dayMap[date.getDay()];
 					var event = '<li><a class=\'eventItem\' data-notes=\'links to the meetup page\' href=\'#\' title=\'' + ev.title + '\'><span class=\'dateWrapper\'><span class=\'month\'>' + 
 						ev.month + '</span><span class=\'date\'>' + date.getDate()+ '</span></span><span class=\'eventWrapper\'><h4 class=\'eventTitle\'><span>' + 

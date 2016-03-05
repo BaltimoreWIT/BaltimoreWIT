@@ -21,8 +21,6 @@ function compare($a, $b) {
     $t2 = strtotime($b->start->dateTime);
     return $t1 - $t2;
 }
-
- 
 //TELL GOOGLE WHAT WE'RE DOING
 $client = new Google_Client();
 $client->setApplicationName("BaltimoreWIT Calendar"); //DON'T THINK THIS MATTERS
@@ -41,7 +39,7 @@ $calendarIds = array('baltimorewit@gmail.com',
                      //SWE
                      'k2gqn0kab9rjos6tth5o9eg3c2bibfhp@import.calendar.google.com',
                      //UMBCCWIT
-                     'je5b4bothch2k08pf9a8jbdrmqheveo8@import.calendar.google.com');
+                     'ir6hb3g8piov45sgrnjibiiq2c@group.calendar.google.com');
 //TELL GOOGLE HOW WE WANT THE EVENTS
 $params = array(
 //CAN'T USE TIME MIN WITHOUT SINGLEEVENTS TURNED ON,
