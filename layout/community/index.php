@@ -16,7 +16,7 @@
 						<h1 class="articleHeadline">Community</h1>
 					</header>
 						<div class="articleContent">
-							<h2 id="connect">Connect</h2>
+							<h2 id="#connect">Connect</h2>
 						</div>
 						<footer class="articleFooter">
 							<div class="shareWrapper">

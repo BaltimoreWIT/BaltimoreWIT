@@ -4,8 +4,8 @@
 	// $metaDesc = "";
 	// $ogTitle = "Baltimore Women in Tech";
 	// $ogType = "article";
-	$ogImage = "http://baltimorewomenintech.com/images/bwit_logotext_li.png";
-	$ogURL = "http://baltimorewomenintech.com/";
+	$ogImage = "http://baltimorewit.org/images/bwit_logotext_li.png";
+	$ogURL = "http://baltimorewit.org/";
 	include "header.php";
 ?>
 <main>
@@ -86,13 +86,13 @@
 				<a href="/blog/">Blog</a>
 			</li>
 			<li>
-				<a href="/community/resources">Resources</a>
+				<a href="/community/#resources">Resources</a>
 			</li>
 			<li>
 				<a href="/community/#connect">Connect</a>
 			</li>
 			<li>
-				<a href="/community/codeofconduct">Code of Conduct</a>
+				<a href="/community/#codeofconduct">Code of Conduct</a>
 			</li>
 		</ul>
 	</div>

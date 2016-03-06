@@ -7,7 +7,7 @@ $oauth_access_token = '3177618922-kF5sOZAxU7CQtWU82YysC0dx6nOKE5p3NzbL6JM';
 $oauth_access_token_secret = 'RfEYfyhJJmSLYQ3NQmxjSuZRqMldXyqTrzsm6wjOq8pkb';
 $consumer_key = 'bycFB2KOWKZItkKhx1MUnS8Qu';
 $consumer_secret = 'Nu7nSeZr1dbppJIxHI3eqETRrI4qEM2TF6IDOUBfYpfWfjt57k';
-$user_id = '78884300';
+$user_id = '3177618922';
 $screen_name = 'baltimorewit';
 $count = 5;
 
