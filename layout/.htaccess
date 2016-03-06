@@ -1,0 +1,6 @@
+# AuthName "webmaster"
+# AuthUserFile "/home/baltowxe/.htpasswds/public_html/passwd"
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+[^\/])(\/)?$ $1.php [NC,L]

@@ -17,10 +17,12 @@ Props to commenter Matt for pointing out the maxResults parameter.
 include(__DIR__.'/google-api-php-client/src/Google/autoload.php'); 
 
 function compare($a, $b) {
-    $t1 = strtotime($a->start->dateTime);
-    $t2 = strtotime($b->start->dateTime);
-    return $t1 - $t2;
+    $t1 = strtotime(str_replace('-', '/', $a['DateTime']));
+    $t2 = strtotime(str_replace('-', '/', $b['DateTime']));
+    return $t2 - $t1;
 }
+
+
 //TELL GOOGLE WHAT WE'RE DOING
 $client = new Google_Client();
 $client->setApplicationName("BaltimoreWIT Calendar"); //DON'T THINK THIS MATTERS
@@ -46,7 +48,6 @@ $params = array(
 //IT SAYS TO TREAT RECURRING EVENTS AS SINGLE EVENTS
     'singleEvents' => true,
     'orderBy' => 'startTime',
-    //'timeMin' => date(DateTime::ATOM),//ONLY PULL EVENTS STARTING TODAY
     'maxResults' => 7 //ONLY USE THIS IF YOU WANT TO LIMIT THE NUMBER
                   //OF EVENTS DISPLAYED
  
@@ -66,7 +67,7 @@ $events = $cal->events->listEvents($calendarId, $params);
 $calTimeZone = $events->timeZone; //GET THE TZ OF THE CALENDAR
 
 //SET THE DEFAULT TIMEZONE SO PHP DOESN'T COMPLAIN. SET TO YOUR LOCAL TIME ZONE.
- date_default_timezone_set($calTimeZone);
+ date_default_timezone_set('EST');
  usort($allEvents, 'compare');
  $parsedEvents = array();
  $count = 0;

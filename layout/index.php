@@ -83,7 +83,7 @@
 	<div class="sectionContent">
 		<ul class="noList">
 			<li>
-				<a href="/blog">Blog</a>
+				<a href="/blog/">Blog</a>
 			</li>
 			<li>
 				<a href="/community/resources">Resources</a>
