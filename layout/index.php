@@ -66,11 +66,11 @@
 	<a href="/careers/">Careers</a>
 	</h3>
 	<div class="sectionContent btnWrapper">
-		<a href="/careers/mentoring" class="btn btnDefault">
+		<a href="/careers/mentoring/" class="btn btnDefault">
 			Be a
 			<em>mentor</em>
 		</a>
-		<a href="/careers/mentoring" class="btn btnDefault">
+		<a href="/careers/mentoring/" class="btn btnDefault">
 			Find a
 			<em>mentor</em>
 		</a>
@@ -83,16 +83,16 @@
 	<div class="sectionContent">
 		<ul class="noList">
 			<li>
-				<a href="/blog/">Blog</a>
+				<a href="/blog">Blog</a>
 			</li>
 			<li>
-				<a href="/community/#resources">Resources</a>
+				<a href="/community/resources">Resources</a>
 			</li>
 			<li>
 				<a href="/community/#connect">Connect</a>
 			</li>
 			<li>
-				<a href="/community/#codeofconduct">Code of Conduct</a>
+				<a href="/community/codeofconduct">Code of Conduct</a>
 			</li>
 		</ul>
 	</div>
