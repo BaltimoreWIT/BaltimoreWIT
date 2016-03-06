@@ -17,8 +17,8 @@ Props to commenter Matt for pointing out the maxResults parameter.
 include(__DIR__.'/google-api-php-client/src/Google/autoload.php'); 
 
 function compare($a, $b) {
-    $t1 = strtotime(str_replace('-', '/', $a['DateTime']));
-    $t2 = strtotime(str_replace('-', '/', $b['DateTime']));
+    $t1 = strtotime($a["end_time"]);
+    $t2 = strtotime($b["end_time"]);
     return $t2 - $t1;
 }
 
