@@ -32,6 +32,8 @@ $cal = new Google_Service_Calendar($client);
 //YOU MAY NEED TO CHANGE THE CENTRAL SHARING SETTINGS. THE CALENDAR FOR THIS SCRIPT
 //MUST HAVE ALL EVENTS VIEWABLE IN SHARING SETTINGS.
 $calendarId = 'baltimorewit@gmail.com';
+//THIS IS WHERE WE ACTUALLY PUT THE RESULTS INTO A VAR
+$calTimeZone = $cal->events->listEvents($calendarId, $params)->timeZone; //GET THE TZ OF THE CALENDAR
 
 $calendarIds = array('baltimorewit@gmail.com',
                      //GDI
@@ -48,7 +50,8 @@ $params = array(
 //IT SAYS TO TREAT RECURRING EVENTS AS SINGLE EVENTS
     'singleEvents' => true,
     'orderBy' => 'startTime',
-    'maxResults' => 7 //ONLY USE THIS IF YOU WANT TO LIMIT THE NUMBER
+    'timeMin' => date(DateTime::ATOM),
+    'maxResults' => 5 //ONLY USE THIS IF YOU WANT TO LIMIT THE NUMBER
                   //OF EVENTS DISPLAYED
  
 );
@@ -62,9 +65,6 @@ try {
 } catch (Google_Service_Exception $ex) {
     //print_r($ex->getErrors());
 }
-//THIS IS WHERE WE ACTUALLY PUT THE RESULTS INTO A VAR
-$events = $cal->events->listEvents($calendarId, $params); 
-$calTimeZone = $events->timeZone; //GET THE TZ OF THE CALENDAR
 
 //SET THE DEFAULT TIMEZONE SO PHP DOESN'T COMPLAIN. SET TO YOUR LOCAL TIME ZONE.
  date_default_timezone_set('EST');
@@ -79,6 +79,7 @@ $calTimeZone = $events->timeZone; //GET THE TZ OF THE CALENDAR
         //Convert date to month and day
  
          $eventDateStr = $event->start->dateTime;
+         $eventEndDateStr = $event->end->dateTime;
          if(empty($eventDateStr))
          {
              // it's an all day event
