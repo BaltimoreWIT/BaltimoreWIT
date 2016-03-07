@@ -89,7 +89,7 @@
 				<a href="/community/resources">Resources</a>
 			</li>
 			<li>
-				<a href="/community/#connect">Connect</a>
+				<a href="/community/connect">Connect</a>
 			</li>
 			<li>
 				<a href="/community/codeofconduct">Code of Conduct</a>
